@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import loadTemplateComponent from "../utils/loadTemplateComponent";
 import http from "../http";
 import {PageNotFound} from "../pages/PageNotFound/PageNotFound";
-import styles from "../assets/css/responsive.module.css";
 
 export const DynamicPageRouter = () => {
   const { slug } = useParams();
@@ -13,7 +12,7 @@ export const DynamicPageRouter = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await http.get(`/get-service-details/${slug}`);
+        const res = await http.get(`${process.env.REACT_APP_API}${slug}`);
         const response = res.data;
 
         setServiceResponse(response);
