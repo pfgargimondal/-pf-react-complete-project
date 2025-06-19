@@ -1,4 +1,3 @@
-import styles from "./Css/Template2.module.css";
 import { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import ServiceEnquiryForm from "./FormComponent/ServiceEnquiryForm";
@@ -6,6 +5,7 @@ import { Link } from "react-router-dom";
 import LastSectionComponent from "./SectionComponent/LastSectionComponent";
 import Loader from "../../component/Loader/Loader";
 import "react-toastify/dist/ReactToastify.css";
+import styles from "./Css/Template2.module.css";
 
 export const Template2 = ({ serviceResponse, slug }) => {
   const [loading, setLoading] = useState(false);
