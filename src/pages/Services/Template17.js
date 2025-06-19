@@ -1,4 +1,4 @@
-import "./Css/Template17.css";
+import styles from "./Css/Template17.module.css";
 import { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import ServiceForm from "./FormComponent/ServiceForm";
@@ -11,20 +11,20 @@ export const Template17 = ({serviceResponse, slug}) => {
   const [loading, setLoading] = useState(false);
   return (
     <div>
-      {loading && <Loader />}
+      {loading && <Loader />} 
       <main>
-    <div className="gdfbdfdfgdf554">
-        <div className="dfgjhfgd" style={{
+    <div className={styles.gdfbdfdfgdf554}>
+        <div className={styles.dfgjhfgd} style={{
               backgroundImage: "url(./images/afros.png)",
             }}>
-            <div className="sdfghdfgdf col-lg-6">
+            <div className={`${styles.sdfghdfgdf} col-lg-6`}>
                 <h1 className="mt-0 mb-0">{serviceResponse.data?.banner_title &&
                 serviceResponse.data.banner_title}</h1>
         
                 <p className="mt-3 mb-5">{serviceResponse.data?.banner_description &&
                 serviceResponse.data.banner_description}</p>
         
-                <div className="vbddds">
+                <div className={styles.vbddds}>
                     <Link to="/contact-us" className="btn125">
                       Contact Us
                     </Link>
@@ -32,7 +32,7 @@ export const Template17 = ({serviceResponse, slug}) => {
                 </div>
             </div>
         
-            <div className="dbfghsdf col-lg-6">
+            <div className={`${styles.dbfghsdf} col-lg-6`}>
                 {serviceResponse.data?.banner_image && (
                 <img
                     src={`${serviceResponse.image_url}/Templete_17/${serviceResponse.data.banner_image}`}
@@ -43,9 +43,9 @@ export const Template17 = ({serviceResponse, slug}) => {
         </div>
     </div>
 
-    <div className="fjhfdfgdfg">
+    <div className={styles.fjhfdfgdfg}>
         <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
                 <h2>{serviceResponse.data?.second_section_title &&
                 serviceResponse.data.second_section_title}</h2>
                 <div className="pt-4"
@@ -62,9 +62,9 @@ export const Template17 = ({serviceResponse, slug}) => {
 
     <ServiceForm loading={setLoading} slug={slug} />
 
-    <div className="fjhfdfgdfg">
+    <div className={styles.fjhfdfgdfg}>
         <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
                 <h2>{serviceResponse.data?.third_section_title &&
                 serviceResponse.data.third_section_title}</h2> 
                 
@@ -80,23 +80,23 @@ export const Template17 = ({serviceResponse, slug}) => {
         </div>
     </div>
     
-    <div className="idnewuihijir py-5">
+    <div className={`${styles.idnewuihijir} py-5`}>
         <div className="custom-container py-5">
-            <div className="ijdnm_eoijrer p-5 mb-5">
+            <div className={`${styles.ijdnm_eoijrer} p-5 mb-5`}>
                 <div className="row">
                     <div className="col-lg-6">
-                        <div className="dopjemwlkjrower_inner">
+                        <div className={styles.dopjemwlkjrower_inner}>
                             <h2>{serviceResponse.data?.fourth_section_title &&
                 serviceResponse.data.fourth_section_title}</h2>
 
-                            <Link to="/contact-us" className="btn125 mt-3">
+                            <Link to="/contact-us" className="btn125" style={{ display: "inline-block", marginTop: "20px" }}>
                               Contact Us Now
                             </Link>
                         </div>
                     </div>
                     
                     <div className="col-lg-6">
-                        <div className="dopjemwlkjrower_inner">
+                        <div className={styles.dopjemwlkjrower_inner}>
                           <div className="mb-0"
                           dangerouslySetInnerHTML={{
                               __html:
@@ -117,7 +117,7 @@ export const Template17 = ({serviceResponse, slug}) => {
             
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="ijdnm_eoijrer p-4">
+                    <div className={`${styles.ijdnm_eoijrer} p-4`}>
                         <h2 className="mb-4">{serviceResponse.data?.fifth_section_title &&
                 serviceResponse.data.fifth_section_title}</h2>
                             
@@ -139,7 +139,7 @@ export const Template17 = ({serviceResponse, slug}) => {
                 </div>
                 
                 <div className="col-lg-6">
-                    <div className="ijdnm_eoijrer p-4">
+                    <div className={`${styles.ijdnm_eoijrer} p-4`}>
                         {serviceResponse.data?.sixth_section_iamge && (
                         <img
                             src={`${serviceResponse.image_url}/Templete_17/${serviceResponse.data.sixth_section_iamge}`}
