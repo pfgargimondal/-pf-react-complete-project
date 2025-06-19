@@ -1,0 +1,215 @@
+
+/*footer start*/
+
+.footer {
+    background: #141313;
+    padding: 30px 0;
+    border-top: 5px solid #c35f16
+}
+
+.footer h4 {
+    font-family: Roboto,sans-serif;
+    color: #db7d1e;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: thin solid #bec3e4;
+    line-height: 2.5;
+    letter-spacing: .5px;
+    text-align: left
+}
+
+.footer .contact-ul,.footer .footer-menu {
+    list-style: none;
+    margin-top: 20px;
+    text-align: left
+}
+
+.footer .footer-menu li a {
+    text-decoration: none;
+    font-family: Roboto,sans-serif;
+    color: #e8e8ea;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 13px
+}
+
+.footer .social-icons {
+    margin-top: 16px
+}
+
+.footer .social-icons a {
+    background: #b4b3b3;
+    border-radius: 15px;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    float: left;
+    text-align: center;
+    color: #fff
+}
+
+.footer .social-icons a i {
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff
+}
+
+.footer .social-icons a.s_facebook:hover {
+    background: #3c5895
+}
+
+.footer .social-icons a.s_twitter:hover {
+    background: #00abea
+}
+
+.footer .social-icons a.s_google-plus:hover {
+    background: #e34e3b
+}
+
+.footer .social-icons a.s_linkedin:hover {
+    background: #007ab3
+}
+
+.footer .social-icons a.s_youtube:hover {
+    background: #c10e02
+}
+
+.footer .recent-blogs {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left
+}
+
+.footer .recent-blogs li {
+    padding: 10px 0 10px 40px;
+    position: relative;
+    border-top: thin solid transparent;
+    border-bottom: thin solid transparent;
+    transition: .2s ease-out
+}
+
+.footer .recent-blogs li:before {
+    content: "\f138";
+    position: absolute;
+    left: 8px;
+    top: 15px;
+    font: 18px/1 FontAwesome;
+    color: #db7d1e
+}
+
+.footer .contact-ul li,.footer .contact-ul li a {
+    line-height: 22px;
+    font-size: 13px;
+    font-family: "PT Serif",serif
+}
+
+.footer .recent-blogs li a {
+    color: #e8e8ea;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: "PT Serif",serif
+}
+
+.footer .contact-ul li {
+    color: #e8e8ea
+}
+
+.footer .contact-ul li a {
+    color: #db7d1e;
+    text-decoration: underline
+}
+
+.footer .newsletter {
+    width: 100%;
+    border: 2px solid #e8e8ea;
+    padding: 5px;
+    margin-top: 24px
+}
+
+.footer .newsletter p {
+    font-size: 13px;
+    color: #e8e8ea;
+    text-align: center;
+}
+
+.footer .newsletter .form-control {
+    background: 0 0;
+    border: 3px solid #1e297b;
+    border-radius: 0;
+    height: 38px!important
+}
+
+.footer .newsletter .form-control:focus {
+    box-shadow: none
+}
+
+.footer .newsletter .btn-danger {
+    background: #a75316;
+    border-color: #a75316;
+    border-radius: 0;
+    margin-top: 25px;
+    font-family: "PT Serif",serif;
+    letter-spacing: .5px;
+    font-size: 15px
+}
+
+#feedback a,#feedback1 a {
+    display: block;
+    background: #06c;
+    height: 85px;
+    width: 165px;
+    padding: 6px 16px;
+    font-family: Arial,sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    border-right: 1px solid #fff;
+    text-align: center;
+    color: #fff
+}
+
+#feedback {
+    right: 0;
+    top: 40%;
+    z-index: 1000;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg)
+}
+
+#feedback a:hover,#feedback1 a:hover {
+    background: #133662
+}
+
+#feedback1 {
+    right: 0;
+    top: 67%;
+    z-index: 1000;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg)
+}
+
+.footer ul {
+    padding-left: 0
+}
+
+.copyright {
+    text-align: center;
+    color: #fff;
+    font-size: 14px
+}
+
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+/*footer end*/

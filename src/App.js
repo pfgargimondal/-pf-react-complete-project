@@ -1,0 +1,35 @@
+
+import { Header, Footer } from "./component/index";
+import { AllRoutes } from "./routes/AllRoutes";
+import { useEffect, useState } from "react";
+import http from "./http";
+import './assets/css/style.css';
+import './assets/css/headerresponsive.css';
+
+function App() {
+  const [CategoryDetails, setcategoryDetails] = useState({
+      data: {},
+  });
+   useEffect(() => {
+    const fetchData = async () => {
+        try {
+        const getresponse = await http.get("/get-service-category");
+        setcategoryDetails(getresponse.data.data);
+
+        } catch (error) {
+            console.error("Error fetching users:", error);
+        }
+    };
+
+    fetchData();
+    }, []);
+  return (
+    <div className="App">
+      <Header CategoryDetails={CategoryDetails}/>  
+      <AllRoutes/>
+      <Footer/>
+    </div>
+  );
+}
+
+export default App;

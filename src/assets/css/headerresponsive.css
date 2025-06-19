@@ -1,0 +1,400 @@
+@media only screen and (max-width: 991px){
+    .hfdjfdf{
+        text-align: center;
+    }    
+
+    .ioherer_inner{
+        text-align: center;
+    }
+
+    .uihiertr_left{
+        margin: auto;
+    }
+
+    .inieuirjndsirferer > .d-none{
+        display: flex !important;
+    }
+
+    .inieuirjndsirferer > div i{
+        font-size: 2.5rem;
+        color: #9e9e9e;
+    }
+
+    .inieuirjndsirferer{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -50rem !important;
+        bottom: 0;
+        background: #fff;
+        padding: 2rem;
+        transition: 0.2s ease-in-out;
+    }
+
+    .resmenushow{
+        left: 0 !important;
+        transition: 0.2s ease-in-out;
+        border-right: 1px solid #251717;
+    }
+
+    header .dropdown-menu .dropdown-submenu{
+        position: relative;
+        left: initial;
+        top: initial;
+    }
+
+    .d-m-cstm{
+        width: auto;
+        max-height: 26rem;
+        overflow-y: auto;
+    }
+
+    header .dropdown-menu .dropdown-submenu .col-6{
+        width: 100%;
+    }
+
+    .h_p_s_1 .container{
+        max-width: 90%;
+    }
+
+    .h_p_s_2 .uiherrr_left img{
+        display: none;
+    }
+
+    .h_p_s_5 .row{
+        display: block;
+    }
+
+    .h_p_s_5 .container.py-5{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .h_p_s_5 .uiehrrr_left{
+        width: 100%;
+    }
+
+    .h_p_s_4 .uiherrr_right .iohrtt .freteeeee{
+        right: 0;
+    }
+    
+    .idhnewnoriewrr button
+    {
+        margin-top:15px !important;
+    }
+    
+    .uygebwuyewr_image 
+    {
+        display:none !important;
+    }
+    .duihewrewrewr .iudnewrewr_image 
+    {
+        top:-15rem;
+    }
+    
+    .uinuiiuiuherwrewr .h-100{
+        height: auto !important;
+    }
+    .headingH1 
+    {
+        padding-top:0px !important;
+    }
+    .uihhhgeyuger .inkjnuhheirihewr_circle_shape
+    {
+        display:none !important;
+    }
+    
+    .ihdheihrer
+    {
+        
+        margin-top:30px !important;
+
+    }
+    .iuhhuhewbruewr_wrapper .kjnidjeirer
+    {
+        display:none !important;
+    }
+    
+    .uihjuiehirwhewirewr .iuhnkjeir_inner .uiuiherer_circle 
+    {
+        text-align:center;
+        margin:auto;
+    }
+    
+       .iuhhuhewbruewr_wrapper .hiuherewr_inner h4 
+    {
+        padding-top:20px !important;
+  
+    }
+    
+    .iuhnkjeir_inner
+    {
+        text-align:center !important;
+      
+    }
+    
+     .iuhnkjeir_inner h4
+    {
+
+        margin-top:15px !important;
+    }
+    .duihejnrjerer .duihereretrt .col-lg-4:nth-child(5n) .dihererer_inner
+    {
+        margin-top:20px;
+    }
+    .duihejnrjerer .duihereretrt .col-lg-4:nth-child(5n-1) .dihererer_inner
+    {
+          margin-top:20px;
+    }
+    .duihejnrjerer .duihereretrt .col-lg-4:nth-child(5n-2) .dihererer_inner
+    {
+         margin-top:20px;
+    }
+    .duihejnrjerer .duihereretrt .col-lg-4:nth-child(5n-3) .dihererer_inner
+    {
+        margin-top:20px;
+    }
+   
+  
+}  
+
+
+
+@media only screen and (max-width: 600px) 
+{
+     .toolsection 
+    {
+        height: auto;
+
+    }
+
+    .nfhdf h4 
+    {
+        padding-top: 40px;
+    }
+    .fhff66ff 
+    { 
+        height: 560px;
+    }
+    .nvgdffgfd  
+    {
+        height: 550px;
+    }
+    .home_page_banner 
+    {
+        background: none !important;
+    }
+     .dhfffg 
+    {
+        height: 270px;
+    }
+
+    .bjfbhgf55
+    {
+        margin-top: 25px;
+    }
+
+     .dfgdfgfd
+    {
+        display: none;
+    }
+    .nbfhgd
+    {
+        display: none;
+
+    } 
+
+    .gnhgfg h2 
+    {
+        font-size: 24px;
+    }
+
+    .bfghvbgf
+    {
+        margin-top: 25px;
+
+    }
+    .lghjdfbgfg
+    {
+        margin-left: 0;
+        margin-top: 25px;
+
+    }
+
+    .dfbghfgf
+    {
+        margin-left: 0px;
+    }
+    .dfbghfgf h2
+    {
+       padding-top: 20px;
+    }
+
+    .vbdbvdfd
+    {
+        padding: 0px;
+
+    }
+
+    .hbgfg h2
+    {
+      font-size: 30px;
+    }
+    .nghfvdfdf h2
+    {
+        padding-top: 25px;
+
+    }
+    .nghfvdfdf1 h2
+    {
+        padding-top: 25px;
+
+    }
+    .nfhjgdd 
+    {
+        margin-bottom: 20px;
+    }
+    .uinuiiuiuherwrewr .laverage_section .process_listing 
+    {
+        display:inline !important;
+    }
+    .uinuiiuiuherwrewr
+    {
+        height: auto !important;
+    }
+    .mdiuhert_left button 
+    {
+        margin-top:15px;
+    }
+    .img-fluid 
+    {
+        margin-bottom:30px;
+    }
+    .iuheir_oihererer .ohjdneirerer .btn 
+    {
+        margin:10px 10px;
+    }
+}
+
+
+
+@media only screen and (max-width: 430px){
+    .hfdjfdf 
+   {
+     text-align: left;
+     margin-bottom: 15px;
+   }
+   .home_page_banner .ihjerrr_content .derer_left h1 
+   {
+     font-size: 3rem;
+   }
+
+    .h_p_s_1 .orietrtert_content 
+   {
+    box-shadow: none;
+   }
+
+   .uihiertr_right h4
+   {
+     padding-top: 5px;
+   }
+   .nvgdffgfd  
+    {
+        height: 500px;
+    }
+    .fhff66ff  
+    {
+        height: 480px;
+    }
+    .toolsection 
+    {
+        padding: 10px;
+    }
+    .ioherer_inner 
+    {
+        margin-bottom: 30px;
+    }
+
+    .gbfbgfdgdf
+    {
+       height: 400px;
+    }
+
+    .dgdfgdfgfdgd {
+        padding: 15px 15px;
+        background-color: #fff;
+        width: 87%;
+        position: absolute;
+        margin-top: 70%;
+        border-radius: 8px;
+    }
+    .fghg 
+    {
+        height:550px;
+    }
+
+    .banner1 
+    {
+        height: 65vh;
+    }
+    .overlay10 
+    {
+        height: 65vh;
+    }
+    .dgdfgdfgfdgd h2 
+    {
+        font-size: 32px;
+    }
+
+    .huygjfgfh 
+    {
+        margin-top: 30px;
+    }
+
+    .fbghhvgfg 
+    {
+       margin-left: 0;
+    }
+    .fhfgh
+    {
+       margin-bottom: 35px;
+    }
+    .hfggffgdg285 h2 
+    {
+       font-size: 40px;
+    }
+    .lfhuygdfgfd h2 
+    {
+       font-size: 40px;
+
+    }
+     .duihewrewrewr .iudnewrewr_image 
+    {
+        top:-16rem;
+    }
+    
+    .ijknuiheiruihwrer .iuniewriwer_inner h2
+    {
+        padding-top:70px !important;
+    }
+    
+    .iuhhuhewbruewr_wrapper .col-lg-6:nth-of-type(2n) .hnuidhehrier 
+    {
+        padding-bottom:10px !important;
+        /*font-size:1.4rem !important;*/
+    }
+    
+    .hnuidhehrier i
+    {
+        padding-top:-10px !important;
+    }
+    .uihhhgeyuger .ihdheihrer h1
+    {
+        margin-top:0px !important;
+    }
+    .iuhhuhewbruewr_wrapper .hiuherewr_inner h4 
+    {
+        padding-top:20px !important;
+    }
+}

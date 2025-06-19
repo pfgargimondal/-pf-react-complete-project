@@ -1,0 +1,79 @@
+:root {
+    --main-orange-border-color: #c35f16;
+    --main-blue-color: #032D60;
+    --main-blue-common-color: #4979f5;
+    --medium-text-color: #181818;
+    --font-family-montserrat: "Montserrat", sans-serif !important;
+    --font-family-space-grotesk: "Space Grotesk", sans-serif !important;
+    --orange-main-highlighted-color: rgb(243, 150, 11);
+    --section-gap: 60px;
+    --button-main-blue-color: #0176D3;
+    --section-background-color: #F8F8FC;
+    --border-color-light-grey: #bdbdbd;
+    --orange-border-color: #FFAB17;
+    --yellow-button-color: #ffc107;
+    --white: #afafaf;
+    --red: #e31b23;
+    --bodyColor: #292a2b;
+    --borderFormEls: hsl(0, 0%, 10%);
+    --bgFormEls: hsl(0, 0%, 14%);
+    --bgFormElsFocus: hsl(0, 7%, 20%);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-family-montserrat);
+    font-weight: 600;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-family: var(--font-family-space-grotesk);
+    font-size: 1.2rem !important;
+}
+
+li, a, input, ::placeholder, span{
+    font-family: var(--font-family-space-grotesk) !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+button {
+    font-weight: 600 !important;
+    font-family: var(--font-family-space-grotesk) !important;
+}
+
+
+.btn125 {
+  padding: 14px 40px;
+  background-color: var(--button-main-blue-color);
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  border: 2px solid var(--button-main-blue-color);
+  border-radius: 4px;
+}
+
+.btn126 {
+  padding: 14px 40px;
+  background-color: transparent;
+  color: var(--button-main-blue-color);
+  font-size: 17px;
+  font-weight: 600;
+  border: 2px solid var(--button-main-blue-color);
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.btn125:hover {
+    background-color: var(--button-main-blue-color);
+    color: white;
+}
+
+main{
+    padding-top: 5rem;
+}

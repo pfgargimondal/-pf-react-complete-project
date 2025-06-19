@@ -1,0 +1,279 @@
+@media only screen and (max-width: 991px){
+    .h-t-contact{
+        display: none;
+    }
+    
+    .home_page_banner {
+        padding: 11rem 0 8rem 0;
+    }
+    
+    .iundkerer {
+        width: 50%;
+    }
+    
+    .vfdgdfgdvdftgdg{
+        display: none;
+    }
+
+    .people__slide .swiper-slide .people__card .people__name.d-flex{
+        display: block !important;
+    }
+
+    .people__slide .swiper-slide .people__card .people__image{
+        margin-inline: auto;
+    }
+    
+    .csdrdecsrddadasd.d-none{
+        display: block !important;
+    }
+    
+    .home-section-1{
+        text-align: center;
+    }
+    
+    .cseerrtyery.d-flex{
+        justify-content: center;
+    }
+    
+    .home-section-1 .uihndewrewr_right .diuewrewre_wrapper .iuniuewrrer_inner .nbgerwerwer {
+        margin: auto;
+    }
+    
+    .home-section-1 .uihndewrewr_right .diuewrewre_wrapper .col-lg-6:nth-of-type(2n) .iuniuewrrer_inner .inbewrew_img,
+    .home-section-1 .uihndewrewr_right .diuewrewre_wrapper .col-lg-6:first-child .iuniuewrrer_inner .inbewrew_img,
+    .home-section-1 .uihndewrewr_right .diuewrewre_wrapper .col-lg-6:nth-of-type(3n) .iuniuewrrer_inner .inbewrew_img,
+    .home-section-1 .uihndewrewr_right .diuewrewre_wrapper .col-lg-6:nth-of-type(2n) .iuniuewrrer_inner span,
+    .home-section-1 .uihndewrewr_right .diuewrewre_wrapper .iuniuewrrer_inner span,
+    .home-section-1 .uihndewrewr_right .diuewrewre_wrapper .col-lg-6:nth-of-type(3n) .iuniuewrrer_inner span{
+        display: none;
+    }
+    
+    .home-section-1 .uihndewrewr_right .diuewrewre_wrapper .col-lg-6 .iuniuewrrer_inner .nbgerwerwer{
+        margin-bottom: 1.2rem;
+    }
+    
+    .home-section-1 .uihndewrewr_right .diuewrewre_wrapper .iuniuewrrer_inner .nbgerwerwer img {
+        top: 50%;
+        left: 50%;
+    }
+    
+    .dihenwriherer .nav-tabs.bg-white{
+        background: transparent !important;
+        box-shadow: none;
+    }    
+    
+    .dihenwriherer .nav-tabs{
+        justify-content: center;
+    }
+    
+    .dihenwriherer .nav-tabs .nav-item{
+        margin: 0.5rem;
+    }
+    
+    .dihenwriherer .nav-tabs .nav-item .nav-link{
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, .24) 0 3px 8px;
+        font-size: 1rem;
+    }
+    
+    .dihenwriherer .inuiuihewrewrewr_wrapper {
+        right: -18rem;
+    }
+    
+    .dihenwriherer #myTabContent{
+        padding-top: 0;
+        text-align: center;
+    }
+    
+    .dihenwriherer .tab-content .tab-pane .iuhjniehwrewr .iieiwrewr{
+        margin: auto;
+    }
+    
+    .dihenwriherer .tab-content .tab-pane .iuhjniehwrewrinihewr .uiniuhewrhiewr {
+        transform: translateY(0);
+    }
+    
+    .dihenwriherer .tab-content .tab-pane .iuhjniehwrewrinihewr .uihniuheroir {
+         margin-top: 2rem; 
+    }
+    
+    .dihenwriherer .nav-tabs.sticky-top {
+        top: 5rem;
+    }
+    
+    .dihenwriherer .nav-tabs .nav-item .nav-link.active, .dihenwriherer .nav-tabs .nav-item .nav-link.active i{
+        background: rgba(73, 121, 245, 1);
+        color: #fff !important;
+    }
+    
+    .iuhieuiriewhrewr .mkdiermewrer{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .iuhieuiriewhrewr h2.main-heading br{
+        display: none;
+    }
+    
+    .ihuidnweirewrewr .ihnewhrwer_inner .uihiqwhee .iunierr .iieworiwerewr li span {
+        font-size: 1.4rem;
+        width: auto;
+    }
+    
+    .ihndkjewurewr.d-flex{
+        justify-content: center;
+    }
+    
+    .ihuidnweirewrewr .ihnewhrwer_inner .uihiqwhee {
+        margin-bottom: 2rem;
+    }
+    
+    .ihidihewirewnriewr .ujbugewrewrer .nav .nav-item:nth-of-type(3n) .nav-link{
+        transform: initial;
+    }
+    
+    .ihidihewirewnriewr .ujbugewrewrer .nav .nav-item:first-child .nav-link, .ihidihewirewnriewr .ujbugewrewrer .nav .nav-item:last-child .nav-link {
+        transform: initial; 
+    }
+    
+    .ihidihewirewnriewr .ujbugewrewrer .nav .nav-item:nth-child(2n) .nav-link {
+        transform: initial; 
+    }
+    
+    .ihidihewirewnriewr .ujbugewrewrer .nav .nav-item .nav-link{
+        width: 6.5rem !important;
+        height: 6.5rem !important;
+        margin-bottom: 1.4rem;
+    }
+    
+    .ihidihewirewnriewr .ujbugewrewrer .tab-content .inhihiweewqe_inner .iuhkihewirewr p{
+        text-align: center;
+    }
+    
+    .home-review-section .iuhdnewr-slider .testimonial-wrap{
+        padding: 0;
+        margin-bottom: 5rem;
+    }
+    
+    .ihuidnweirewrewr .ihnewhrwer_inner,
+    .iuhduiewrewr_left{
+        text-align: center;
+    }
+    
+    .iieworiwerewr{
+        margin-top: 2rem;
+    }
+    
+    .home_page_banner .iuhduiewrewr_right .uinbkjhwuiere .duhweurw,
+    .home_page_banner .iuhduiewrewr_right .uinkhwerwer{
+        z-index: -2;
+    }
+    
+    .dm-s-1-w-1-b-content{
+        height: auto;
+    }
+    
+    .o-b-s-1-w-inner, .p-p-c-m-s-3-w-l-i-box{
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px){
+    .iundkerer {
+        width: 85%;
+    }
+    
+    .home_page_banner .iuhduiewrewr_right form {
+        width: 100%;
+        z-index: 999;
+    }
+    
+    .svtgegherewvfhfgh .project {
+        width: 80%;
+    }
+    
+    .svtgegherewvfhfgh .project .screen {
+        width: 100%;
+    }
+    
+    .svtgegherewvfhfgh .slidersfvdf {
+        height: 60vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 585px){
+    .svtgegherewvfhfgh .project {
+        width: 70%;
+        margin: 3rem 2rem;
+        height: 295px;
+    }
+    
+    .svtgegherewvfhfgh .project .screen {
+        height: 295px;
+    }
+    
+    .svtgegherewvfhfgh .project .tablet {
+        width: 125px;
+        height: 215px;
+    }
+    
+    .svtgegherewvfhfgh .project .mobile {
+        width: 75px;
+        height: 125px;
+    }
+    
+    .svtgegherewvfhfgh .slidersfvdf .control .fa:first-of-type,
+    .svtgegherewvfhfgh .slidersfvdf .control .fa:last-of-type{
+        top: 33%;
+        font-size: 2.5rem;
+    }
+    
+    .svtgegherewvfhfgh .slidersfvdf {
+        height: 45vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 393px){
+    .iundkerer {
+       width: 95%;
+    }
+    
+    .svtgegherewvfhfgh .slidersfvdf {
+        height: 35vh;
+    }
+    
+    .svtgegherewvfhfgh .slidersfvdf .fa.fa-5x {
+        font-size: 2em;
+    }
+}
+
+
