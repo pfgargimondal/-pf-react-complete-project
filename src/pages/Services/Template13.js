@@ -1,4 +1,4 @@
-import "./Css/Template13.css";
+import styles from "./Css/Template13.module.css";
 import { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import ServiceForm from "./FormComponent/ServiceForm";
@@ -12,14 +12,14 @@ export const Template13 = ({ serviceResponse, slug }) => {
     <div>
       {loading && <Loader />}
       <main>
-        <div className="gdfbdfdfgdf554">
+        <div className={styles.gdfbdfdfgdf554}>
           <div
-            className="dfgjhfgd"
+            className={styles.dfgjhfgd}
             style={{
               backgroundImage: "url(./images/afros.png)",
             }}
           >
-            <div className="sdfghdfgdf col-lg-6">
+            <div className={`${styles.sdfghdfgdf} col-lg-6`}>
               <h1 className="mt-0 mb-0">
                 {serviceResponse.data?.banner_title &&
                   serviceResponse.data.banner_title}
@@ -32,7 +32,7 @@ export const Template13 = ({ serviceResponse, slug }) => {
                 }}
               />
 
-              <div className="vbddds">
+              <div className={styles.vbddds}>
                 <Link to="/contact-us" className="btn125">
                   Contact Us
                 </Link>
@@ -40,7 +40,7 @@ export const Template13 = ({ serviceResponse, slug }) => {
               </div>
             </div>
 
-            <div className="dbfghsdf col-lg-6">
+            <div className={`${styles.dbfghsdf} col-lg-6`}>
               {serviceResponse.data?.banner_image && (
                 <img
                   src={`${serviceResponse.image_url}/Template_13/${serviceResponse.data.banner_image}`}
@@ -51,9 +51,9 @@ export const Template13 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="fjhfdfgdfg">
+        <div className={styles.fjhfdfgdfg}>
           <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
               <h2>
                 {serviceResponse.data?.second_section_title &&
                   serviceResponse.data.second_section_title}
@@ -73,9 +73,9 @@ export const Template13 = ({ serviceResponse, slug }) => {
 
         <ServiceForm loading={setLoading} slug={slug} />
 
-        <div className="fjhfdfgdfg pb-5">
+        <div className={`${styles.fjhfdfgdfg} pb-5`}>
           <div className="custom-container pb-5">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
               <h2>
                 {serviceResponse.data?.third_section_title &&
                   serviceResponse.data.third_section_title}
@@ -93,11 +93,11 @@ export const Template13 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="lkfsdmfuisdnfsdf position-relative mb-4 mt-5">
+        <div className={`${styles.lkfsdmfuisdnfsdf} position-relative mb-4 mt-5`}>
           <div className="custom-container">
             <div className="row">
               <div className="col-lg-7 mb-4">
-                <div className="doksjoijfrerr_right">
+                <div className={styles.doksjoijfrerr_right}>
                   <h2 className="mb-4">
                     {serviceResponse.data?.fourth_section_title &&
                       serviceResponse.data.fourth_section_title}
@@ -114,7 +114,7 @@ export const Template13 = ({ serviceResponse, slug }) => {
               </div>
 
               <div className="col-lg-5 mb-4">
-                <div className="doksjoijfrerr_left">
+                <div className={styles.doksjoijfrerr_left}>
                   {serviceResponse.data?.fourth_section_image && (
                     <img
                       src={`${serviceResponse.image_url}/Template_13/${serviceResponse.data.fourth_section_image}`}
@@ -128,11 +128,11 @@ export const Template13 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="ndkasedfnsdifsdff position-relative mb-4 mt-5 pt-5">
+        <div className={`${styles.ndkasedfnsdifsdff} position-relative mb-4 mt-5 pt-5`}>
           <div className="custom-container pt-5">
             <div className="row">
               <div className="col-lg-5 mb-4">
-                <div className="doksjoijfrerr_right">
+                <div className={styles.doksjoijfrerr_right}>
                   {serviceResponse.data?.fifth_section_image && (
                     <img
                       src={`${serviceResponse.image_url}/Template_13/${serviceResponse.data.fifth_section_image}`}
@@ -144,7 +144,7 @@ export const Template13 = ({ serviceResponse, slug }) => {
               </div>
 
               <div className="col-lg-7 mb-4">
-                <div className="doksjoijfrerr_left">
+                <div className={styles.doksjoijfrerr_left}>
                   <h2 className="mb-4">
                     {serviceResponse.data?.fifth_section_title &&
                       serviceResponse.data.fifth_section_title}
@@ -163,7 +163,7 @@ export const Template13 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="sdmsdjhsds">
+        <div className={styles.sdmsdjhsds}>
           {serviceResponse.data?.sixth_section_image && (
             <img
               src={`${serviceResponse.image_url}/Template_13/${serviceResponse.data.sixth_section_image}`}

@@ -89,7 +89,7 @@ export const Template15 =({ serviceResponse, slug }) =>{
               <li>
                 <a
                   href="#"
-                  className={activeTab === 'tab-1' ? 'active' : ''}
+                  className={activeTab === 'tab-1' ? styles.active : ''}
                   data-rel="tab-1"
                   onClick={(e) => {
                     e.preventDefault();
@@ -102,7 +102,7 @@ export const Template15 =({ serviceResponse, slug }) =>{
               <li>
                 <a
                   href="#"
-                  className={activeTab === 'tab-2' ? 'active' : ''}
+                  className={activeTab === 'tab-2' ? styles.active : ''}
                   data-rel="tab-2"
                   onClick={(e) => {
                     e.preventDefault();
@@ -130,7 +130,7 @@ export const Template15 =({ serviceResponse, slug }) =>{
                 }}
               />
             </div>
-
+ 
             <div
               className={`tab-box ${styles.sdfsrfdfrt}`}
               id="tab-2"

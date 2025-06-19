@@ -1,4 +1,4 @@
-import "./Css/Template23.css";
+import styles from "./Css/Template23.module.css";
 import { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import ServiceEnquiryForm from "./FormComponent/ServiceEnquiryForm";
@@ -36,8 +36,8 @@ export const Template23 = ({ serviceResponse, slug }) => {
     <div>
       {loading && <Loader />}
       <main>
-        <div className="dfgjhfgd">
-          <div className="sdfghdfgdf col-lg-6">
+        <div className={styles.dfgjhfgd}>
+          <div className={`${styles.sdfghdfgdf} col-lg-6`}>
             <h1 className="mt-0 mb-0">
               {serviceResponse.data?.banner_title &&
                 serviceResponse.data.banner_title}
@@ -48,7 +48,7 @@ export const Template23 = ({ serviceResponse, slug }) => {
                 serviceResponse.data.banner_description}
             </p>
 
-            <div className="vbddds">
+            <div className={styles.vbddds}>
               <Link to="/contact-us" className="btn125">
                 Contact Us
               </Link>
@@ -56,7 +56,7 @@ export const Template23 = ({ serviceResponse, slug }) => {
             </div>
           </div>
 
-          <div className="dbfghsdf col-lg-6">
+          <div className={`${styles.dbfghsdf} col-lg-6`}>
             {serviceResponse.data?.banner_image && (
               <img
                 src={`${serviceResponse.image_url}/Templete_23/${serviceResponse.data.banner_image}`}
@@ -66,9 +66,9 @@ export const Template23 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="fjhfdfgdfg">
+        <div className={styles.fjhfdfgdfg}>
           <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
               <h2>
                 {serviceResponse.data?.second_section_title &&
                   serviceResponse.data.second_section_title}
@@ -88,17 +88,17 @@ export const Template23 = ({ serviceResponse, slug }) => {
 
         <ServiceEnquiryForm loading={setLoading} slug={slug} />
 
-        <div className="asdfdergdg py-5">
+        <div className={`${styles.asdfdergdg} py-5`}>
           <div className="container-fluid p-5">
-            <div className="doijfjwerit_inner">
-              <div className="tab-teaser row">
-                <div className="tab-menu col-lg-6">
+            <div className={styles.doijfjwerit_inner}>
+              <div className={`${styles["tab-teaser"]} row`}>
+                <div className={`${styles["tab-menu"]} col-lg-6`}>
                   <ul>
                     {tabs.map((tab) => (
                       <li key={tab.id}>
                         <a
                           href="#"
-                          className={activeTab === tab.id ? "active" : ""}
+                          className={activeTab === tab.id ? styles.active : ""}
                           data-rel={tab.id}
                           onClick={(e) => {
                             e.preventDefault();
@@ -118,11 +118,11 @@ export const Template23 = ({ serviceResponse, slug }) => {
                   </ul>
                 </div>
 
-                <div className="tab-main-box col-lg-6">
+                <div className={`${styles["tab-main-box"]} col-lg-6`}>
                   {tabs.map((tab) => (
                     <div
                       key={tab.id}
-                      className="tab-box"
+                      className={styles.tabBox}
                       id={tab.id}
                       style={{
                         display: activeTab === tab.id ? "block" : "none",

@@ -1,4 +1,4 @@
-import "./Css/Template48.css";
+import styles from "./Css/Template48.module.css";
 import { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import ServiceEnquiryForm from "./FormComponent/ServiceEnquiryForm";
@@ -15,9 +15,9 @@ export const Template48 = ({ serviceResponse, slug }) => {
     <div>
       {loading && <Loader />}
       <main>
-        <div className="gdfbdfdfgdf554">
-          <div className="dfgjhfgd">
-            <div className="sdfghdfgdf col-lg-6">
+        <div className={styles.gdfbdfdfgdf554}>
+          <div className={styles.dfgjhfgd}>
+            <div className={`${styles.sdfghdfgdf} col-lg-6`}>
               <h1 className="mt-0 mb-0">
                 {serviceResponse.data?.banner_title &&
                   serviceResponse.data.banner_title}
@@ -28,7 +28,7 @@ export const Template48 = ({ serviceResponse, slug }) => {
                   serviceResponse.data.banner_description}
               </p>
 
-              <div className="vbddds">
+              <div className={styles.vbddds}>
                 <Link to="/contact-us" className="btn125">
                   Contact Us
                 </Link>
@@ -36,7 +36,7 @@ export const Template48 = ({ serviceResponse, slug }) => {
               </div>
             </div>
 
-            <div className="dbfghsdf col-lg-6">
+            <div className={`${styles.dbfghsdf} col-lg-6`}>
               {serviceResponse.data?.banner_image && (
                 <img
                   src={`${serviceResponse.image_url}/Templete_48/${serviceResponse.data.banner_image}`}
@@ -47,9 +47,9 @@ export const Template48 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="fjhfdfgdfg">
+        <div className={styles.fjhfdfgdfg}>
           <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
               <h2>
                 {serviceResponse.data?.second_section_title &&
                   serviceResponse.data.second_section_title}
@@ -67,13 +67,13 @@ export const Template48 = ({ serviceResponse, slug }) => {
         </div>
         <ServiceEnquiryForm loading={setLoading} slug={slug} />
 
-        <div className="dfgdffgdfg">
+        <div className={styles.dfgdffgdfg}>
           <div className="custom-container">
-            <div className="fgdfghgdfg">
-              <div className="fbgdfg5644">
+            <div className={styles.fgdfghgdfg}>
+              <div className={styles.fbgdfg5644}>
                 <div className="row">
                   <div className="col-lg-7">
-                    <div className="dfbngdfjhgd">
+                    <div className={styles.dfbngdfjhgd}>
                       <h2>
                         {serviceResponse.data?.third_section_title &&
                           serviceResponse.data.third_section_title}
@@ -91,7 +91,7 @@ export const Template48 = ({ serviceResponse, slug }) => {
                     </div>
                   </div>
                   <div className="col-lg-5">
-                    <div className="dfjhsdfsd">
+                    <div className={styles.dfjhsdfsd}>
                       {serviceResponse.data?.third_section_image && (
                         <img
                           src={`${serviceResponse.image_url}/Templete_48/${serviceResponse.data.third_section_image}`}
@@ -103,10 +103,10 @@ export const Template48 = ({ serviceResponse, slug }) => {
                 </div>
               </div>
 
-              <div className="fbgdfg5644">
+              <div className={styles.fbgdfg5644}>
                 <div className="row">
                   <div className="col-lg-7">
-                    <div className="dfbngdfjhgd">
+                    <div className={styles.dfbngdfjhgd}>
                       <h2>
                         {serviceResponse.data?.fourth_section_title &&
                           serviceResponse.data.fourth_section_title}
@@ -124,7 +124,7 @@ export const Template48 = ({ serviceResponse, slug }) => {
                     </div>
                   </div>
                   <div className="col-lg-5">
-                    <div className="dfjhsdfsd">
+                    <div className={styles.dfjhsdfsd}>
                       {serviceResponse.data?.fourth_section_image && (
                         <img
                           src={`${serviceResponse.image_url}/Templete_48/${serviceResponse.data.fourth_section_image}`}
@@ -136,10 +136,10 @@ export const Template48 = ({ serviceResponse, slug }) => {
                 </div>
               </div>
 
-              <div className="fbgdfg5644">
+              <div className={styles.fbgdfg5644}>
                 <div className="row">
                   <div className="col-lg-7">
-                    <div className="dfbngdfjhgd">
+                    <div className={styles.dfbngdfjhgd}>
                       <h2>
                         {serviceResponse.data?.fifth_section_title &&
                           serviceResponse.data.fifth_section_title}
@@ -157,7 +157,7 @@ export const Template48 = ({ serviceResponse, slug }) => {
                     </div>
                   </div>
                   <div className="col-lg-5">
-                    <div className="dfjhsdfsd">
+                    <div className={styles.dfjhsdfsd}>
                       {serviceResponse.data?.fifth_section_image && (
                         <img
                           src={`${serviceResponse.image_url}/Templete_48/${serviceResponse.data.fifth_section_image}`}
@@ -172,9 +172,9 @@ export const Template48 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="fjhfdfgdfg">
+        <div className={styles.fjhfdfgdfg}>
           <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
               <h2>
                 {serviceResponse.data?.sixth_section_title &&
                   serviceResponse.data.sixth_section_title}

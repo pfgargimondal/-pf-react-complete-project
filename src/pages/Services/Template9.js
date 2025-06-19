@@ -1,4 +1,4 @@
-import "./Css/Template9.css";
+import styles from "./Css/Template9.module.css";
 import { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import ServiceEnquiryForm from "./FormComponent/ServiceEnquiryForm";
@@ -13,15 +13,15 @@ export const Template9 =({ serviceResponse, slug }) =>{
     <div>
         {loading && <Loader />}
       <main>
-    <div className="dfgjhfgd">
-        <div className="sdfghdfgdf col-lg-6">
+    <div className={styles.dfgjhfgd}>
+        <div className={`${styles.sdfghdfgdf} col-lg-6`}>
             <h1 className="mt-0 mb-0">{serviceResponse.data?.banner_title &&
                 serviceResponse.data.banner_title}</h1>
     
             <p className="mt-3 mb-5">{serviceResponse.data?.banner_description &&
                 serviceResponse.data.banner_description}</p>
     
-            <div className="vbddds">
+            <div className={styles.vbddds}>
                 <Link to="/contact-us" className="btn125">
                     Contact Us
                 </Link>
@@ -29,7 +29,7 @@ export const Template9 =({ serviceResponse, slug }) =>{
             </div>
         </div>
     
-        <div className="dbfghsdf col-lg-6">
+        <div className={`${styles.dbfghsdf} col-lg-6`}>
             {serviceResponse.data?.banner_image && (
             <img
                 src={`${serviceResponse.image_url}/Template_9/${serviceResponse.data.banner_image}`}
@@ -39,9 +39,9 @@ export const Template9 =({ serviceResponse, slug }) =>{
         </div>
     </div>
     
-    <div className="fjhfdfgdfg">
+    <div className={styles.fjhfdfgdfg}>
         <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
                 <h2>{serviceResponse.data?.second_section_title &&
                 serviceResponse.data.second_section_title}</h2>
                 
@@ -56,13 +56,13 @@ export const Template9 =({ serviceResponse, slug }) =>{
         </div>
     </div>
     <ServiceEnquiryForm loading={setLoading} slug={slug} />
-    <div className="dfbjhfdfgdf py-5 mt-5" style={{
+    <div className={`${styles.dfbjhfdfgdf}  py-5 mt-5`} style={{
               backgroundImage: "url(./images/d.png)",
             }}>
         <div className="container-fluid p-5">
             <div className="row justify-content-center">
                 <div className="col-lg-5 mb-4">
-                    <div className="woije_inner p-4">
+                    <div className={`${styles.woije_inner}  p-4`}>
                         <h4>{serviceResponse.data?.third_section_title &&
                 serviceResponse.data.third_section_title}</h4>
                         <div className="mb-0"
@@ -76,7 +76,7 @@ export const Template9 =({ serviceResponse, slug }) =>{
                 </div>
                 
                 <div className="col-lg-5 mb-4">
-                    <div className="woije_inner fdvdfbrrscvd p-4">
+                    <div className={`${styles.woije_inner} ${styles.fdvdfbrrscvd} p-4`}>
                         <h4>{serviceResponse.data?.fourth_section_title &&
                 serviceResponse.data.fourth_section_title}</h4>
                         <div className="mb-0"
@@ -92,7 +92,7 @@ export const Template9 =({ serviceResponse, slug }) =>{
             
             <div className="row justify-content-center">
                 <div className="col-lg-5 mb-4">
-                    <div className="woije_inner dscsdfsrrrr">
+                    <div className={`${styles.woije_inner} ${styles.dscsdfsrrrr}`}>
                         {serviceResponse.data?.fifth_section_image && (
                         <img
                             src={`${serviceResponse.image_url}/Template_9/${serviceResponse.data.fifth_section_image}`}
@@ -103,7 +103,7 @@ export const Template9 =({ serviceResponse, slug }) =>{
                 </div>
                 
                 <div className="col-lg-5 mb-4">
-                    <div className="woije_inner p-4">
+                    <div className={`${styles.woije_inner} p-4`}>
                         <h4>{serviceResponse.data?.fifth_section_title &&
                 serviceResponse.data.fifth_section_title}</h4>
                         <div className="mb-0"
