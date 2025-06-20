@@ -34,7 +34,6 @@ export const Services = () => {
                         
                         <h1>Professional Graphic Design</h1>
                         
-                        <h4></h4>
                     </div>
                 </div>
              </div>
