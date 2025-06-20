@@ -71,7 +71,7 @@ export const Template45 = ({ serviceResponse, slug }) => {
             <div className={styles.fgdfgfdg}>
               <div className="row">
                 <div className="col-lg-6">
-                  <div className={styles.cfbfjhf} style={{backgroundImage: "url(./images/background\ \(2\).png)"}}>
+                  <div className={styles.cfbfjhf} style={{backgroundImage: "url(./images/background(2).png)"}}>
                     <h2>
                       {serviceResponse.data?.third_section_title &&
                         serviceResponse.data.third_section_title}
