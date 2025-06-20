@@ -10,49 +10,49 @@ export const Footer = () => {
         <ul className="footer-menu">
           <li>
             {" "}
-            <a href="/" target="blank">
+            <a href="/" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-home" /> Home
             </a>{" "}
           </li>
           <li>
             {" "}
-            <a href="/about-us" target="blank">
+            <a href="/about-us" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-users" /> About Us
             </a>{" "}
           </li>
           <li>
             {" "}
-            <a href="/services" target="blank">
+            <a href="/services" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-handshake-o" /> Services
             </a>{" "}
           </li>
           <li>
             {" "}
-            <a href="/our-portfolio" target="blank">
+            <a href="/our-portfolio" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-briefcase" /> Portfolio
             </a>{" "}
           </li>
           <li>
             {" "}
-            <a href="/business-register" target="blank">
+            <a href="/business-register" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-pencil-square-o" /> Business Register
             </a>{" "}
           </li>
           <li>
             {" "}
-            <a href="/careers" target="blank">
+            <a href="/careers" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-signal" /> Career
             </a>{" "}
           </li>
           <li>
             {" "}
-            <a href="/blogs" target="blank">
+            <a href="/blogs" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-file-text-o" /> Blog
             </a>{" "}
           </li>
           <li>
             {" "}
-            <a href="/contact-us" target="blank">
+            <a href="/contact-us" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-envelope-o" /> Contact
             </a>{" "}
           </li>
