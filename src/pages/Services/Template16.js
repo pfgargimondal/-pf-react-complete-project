@@ -1,8 +1,8 @@
 import styles from "./Css/Template16.module.css";
 import { useState } from "react";
-import ServiceForm from "./FormComponent/ServiceForm";
 import { Link } from "react-router-dom";
 import LastSectionComponent from "./SectionComponent/LastSectionComponent";
+import ServiceForm from "./FormComponent/ServiceForm";
 import Loader from "../../component/Loader/Loader";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -48,7 +48,7 @@ export const Template16 = ({ serviceResponse, slug }) => {
               )}
             </div>
           </div>
-        </div>
+        </div> 
 
         <div className={styles.fjhfdfgdfg}>
           <div className="custom-container">
