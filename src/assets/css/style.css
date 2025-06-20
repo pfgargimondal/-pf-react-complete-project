@@ -13,7 +13,7 @@
     --orange-border-color: #FFAB17;
     --yellow-button-color: #ffc107;
     --white: #afafaf;
-    --red: #e31b23;
+    --red: #e31b23; 
     --bodyColor: #292a2b;
     --borderFormEls: hsl(0, 0%, 10%);
     --bgFormEls: hsl(0, 0%, 14%);
@@ -27,6 +27,11 @@ h1, h2, h3, h4, h5, h6{
 
 h1{
     font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 p{
@@ -80,4 +85,37 @@ main{
 
 .middle-wrapper{
     min-height: 80vh;
+}
+
+
+.custom-container {
+  width: 70%;
+  margin: auto;
+}
+
+.custom-container10 {
+  width: 75%;
+  margin: auto;
+}
+
+.fgjhdfg .form-control {
+  padding: 10px;
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.fgjhdfg {
+  margin-bottom: 20px;
+}
+
+
+.dfbnhdfdf h2 {
+  color: #032D60;
+  font-size: 40px;
+  font-weight: 600;
+}
+.dfbnhdfdf p {
+  color: #181818;
+  font-weight: 500;
+  font-size: 17px;
 }

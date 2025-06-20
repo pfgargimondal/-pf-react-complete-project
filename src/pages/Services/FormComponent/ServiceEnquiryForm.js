@@ -173,7 +173,7 @@ const ServiceEnquiryForm = ({ loading, slug}) => {
                     </div>
 
                     <div className="dfgbfdf">
-                      <button type="button" onClick={submitForm}>Send Message</button>
+                      <button type="button" className="btn125" onClick={submitForm}>Send Message</button>
                     </div>
                   </div>
                 </div>

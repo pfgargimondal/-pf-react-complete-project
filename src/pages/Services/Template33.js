@@ -1,4 +1,4 @@
-import "./Css/Template33.css";
+import styles from "./Css/Template33.module.css";
 import { useState } from "react";
 import ServiceForm from "./FormComponent/ServiceForm";
 import { Link } from "react-router-dom";
@@ -36,12 +36,12 @@ export const Template33 = ({ serviceResponse, slug }) => {
     <div>
       {loading && <Loader />}
       <main>
-        <div class="gdfbdfdfgdf554">
+        <div class={styles.gdfbdfdfgdf554}>
           <div
-            class="dfgjhfgd"
+            class={styles.dfgjhfgd}
             style={{ background: "url(./images/afros.png)" }}
           >
-            <div class="sdfghdfgdf col-lg-6">
+            <div class={`${styles.sdfghdfgdf} col-lg-6`}>
               <h1 class="mt-0 mb-0">
                 {serviceResponse.data?.banner_title &&
                   serviceResponse.data.banner_title}
@@ -52,7 +52,7 @@ export const Template33 = ({ serviceResponse, slug }) => {
                   serviceResponse.data.banner_description}
               </p>
 
-              <div class="vbddds">
+              <div class={styles.vbddds}>
                 <Link to="/contact-us" className="btn125">
                   Contact Us
                 </Link>
@@ -60,7 +60,7 @@ export const Template33 = ({ serviceResponse, slug }) => {
               </div>
             </div>
 
-            <div class="dbfghsdf col-lg-6">
+            <div class={`${styles.dbfghsdf} col-lg-6`}>
               {serviceResponse.data?.banner_image && (
                 <img
                   src={`${serviceResponse.image_url}/Templete_33/${serviceResponse.data.banner_image}`}
@@ -71,9 +71,9 @@ export const Template33 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div class="fjhfdfgdfg">
+        <div class={styles.fjhfdfgdfg}>
           <div class="custom-container">
-            <div class="sdfsdfsdf">
+            <div class={styles.sdfsdfsdf}>
               <h2>
                 {serviceResponse.data?.second_section_title &&
                   serviceResponse.data.second_section_title}
@@ -93,9 +93,9 @@ export const Template33 = ({ serviceResponse, slug }) => {
 
         <ServiceForm loading={setLoading} slug={slug} />
 
-        <div class="fjhfdfgdfg">
+        <div class={styles.fjhfdfgdfg}>
           <div class="custom-container">
-            <div class="sdfsdfsdf">
+            <div class={styles.sdfsdfsdf}>
               <div
                 class="pt-4"
                 dangerouslySetInnerHTML={{
@@ -108,11 +108,11 @@ export const Template33 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div class="aiundeuiuierr py-5">
+        <div class={`${styles.aiundeuiuierr} py-5`}>
           <div class="custom-container py-5">
             <div class="row">
               <div class="col-lg-6 mb-4">
-                <div class="dojiewojeir_left sticky-top">
+                <div class={`${styles.dojiewojeir_left} sticky-top`}>
                   {serviceResponse.data?.fourth_section_main_image && (
                     <img
                       src={`${serviceResponse.image_url}/Templete_33/${serviceResponse.data.fourth_section_main_image}`}
@@ -124,15 +124,15 @@ export const Template33 = ({ serviceResponse, slug }) => {
               </div>
 
               <div class="col-lg-6 mb-4">
-                <div className="dojiewojeir_right">
+                <div className={styles.dojiewojeir_right}>
                   <h3>{serviceResponse.data?.fourth_section_main_title}</h3>
 
-                  <div className="inijjojioiejwoir mt-3">
+                  <div className={`${styles.inijjojioiejwoir} mt-3`}>
                     {accordionData.map((item, index) => (
                       <div
                         key={index}
-                        className={`odnjewhiewrewr d-flex p-4 mb-4 ${
-                          activeIndex === index ? "active" : ""
+                        className={`${styles.odnjewhiewrewr} d-flex p-4 mb-4 ${
+                          activeIndex === index ? styles.active : ""
                         }`}
                         onClick={() => toggleAccordion(index)}
                         style={{ cursor: "pointer" }}
@@ -144,7 +144,7 @@ export const Template33 = ({ serviceResponse, slug }) => {
                             className="img-fluid me-2"
                           />
                         )}
-                        <div className="inikninkeuiwr">
+                        <div className={styles.inikninkeuiwr}>
                           <h4>{item.title}</h4>
 
                           {activeIndex === index && (
@@ -165,7 +165,7 @@ export const Template33 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div class="sdmsdjhsds">
+        <div class={styles.sdmsdjhsds}>
           {serviceResponse.data?.featured_image && (
             <img
               src={`${serviceResponse.image_url}/Templete_33/${serviceResponse.data.featured_image}`}

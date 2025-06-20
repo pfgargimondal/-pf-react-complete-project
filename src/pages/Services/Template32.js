@@ -1,4 +1,4 @@
-import "./Css/Template32.css";
+import styles from "./Css/Template32.module.css";
 import { useState } from "react";
 import ServiceEnquiryForm from "./FormComponent/ServiceEnquiryForm";
 import { Link } from "react-router-dom";
@@ -12,8 +12,8 @@ export const Template32 = ({ serviceResponse, slug }) => {
     <div>
       {loading && <Loader />}
       <main>
-        <div className="dfgjhfgd">
-          <div className="sdfghdfgdf col-lg-6">
+        <div className={styles.dfgjhfgd}>
+          <div className={`${styles.sdfghdfgdf} col-lg-6`}>
             <h1 className="mt-0 mb-0">
               {serviceResponse.data?.banner_title &&
                 serviceResponse.data.banner_title}
@@ -24,7 +24,7 @@ export const Template32 = ({ serviceResponse, slug }) => {
                 serviceResponse.data.banner_description}
             </p>
 
-            <div className="vbddds">
+            <div className={styles.vbddds}>
               <Link to="/contact-us" className="btn125">
                 Contact Us
               </Link>
@@ -32,7 +32,7 @@ export const Template32 = ({ serviceResponse, slug }) => {
             </div>
           </div>
 
-          <div className="dbfghsdf col-lg-6">
+          <div className={`${styles.dbfghsdf} col-lg-6`}>
             {serviceResponse.data?.banner_image && (
               <img
                 src={`${serviceResponse.image_url}/Template_32/${serviceResponse.data.banner_image}`}
@@ -42,9 +42,9 @@ export const Template32 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="fjhfdfgdfg">
+        <div className={styles.fjhfdfgdfg}>
           <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
               <h2>
                 {serviceResponse.data?.second_section_title &&
                   serviceResponse.data.second_section_title}
@@ -60,12 +60,12 @@ export const Template32 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="dfbjhfdfgdf">
+        <div className={styles.dfbjhfdfgdf}>
           <div className="custom-container">
-            <div className="vgbfdf">
+            <div className={styles.vgbfdf}>
               <div className="row">
                 <div className="col-lg-5">
-                  <div className="dgndfgdfgdf">
+                  <div className={styles.dgndfgdfgdf}>
                     {serviceResponse.data?.third_section_image && (
                       <img
                         src={`${serviceResponse.image_url}/Template_32/${serviceResponse.data.third_section_image}`}
@@ -75,7 +75,7 @@ export const Template32 = ({ serviceResponse, slug }) => {
                   </div>
                 </div>
                 <div className="col-lg-7">
-                  <div className="fbgdfgdfgdf">
+                  <div className={styles.fbgdfgdfgdf}>
                     <h2>
                       {serviceResponse.data?.third_section_title &&
                         serviceResponse.data.third_section_title}
@@ -87,7 +87,7 @@ export const Template32 = ({ serviceResponse, slug }) => {
                           serviceResponse.data.third_section_description,
                       }}
                     />
-                    <button>Get started</button>
+                    <button className="btn125">Get started</button>
                   </div>
                 </div>
               </div>
@@ -95,17 +95,17 @@ export const Template32 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="fhfgjhsdfgsdfg">
+        <div className={styles.fhfgjhsdfgsdfg}>
           <div className="custom-container">
-            <div className="bhffsdf">
+            <div className={styles.bhffsdf}>
               <div className="row">
                 <div className="col-lg-12">
-                  <div className="dfbgjhdfg">
-                    <div className="fgdf d-flex">
-                      <div className="fgdfjg"></div>
-                      <div className="fgdfjg2"></div>
+                  <div className={styles.dfbgjhdfg}>
+                    <div className={`${styles.fgdf} d-flex`}>
+                      <div className={styles.fgdfjg}></div>
+                      <div className={styles.fgdfjg2}></div>
                     </div>
-                    <div className="fhgdfg">
+                    <div className={styles.fhgdfg}>
                       <h2>
                         {serviceResponse.data?.fourth_section_title &&
                           serviceResponse.data.fourth_section_title}
@@ -117,18 +117,18 @@ export const Template32 = ({ serviceResponse, slug }) => {
                             serviceResponse.data.fourth_section_description,
                         }}
                       />
-                      <div className="dsfbsdf">
-                        <button>Call Anytime</button>
+                      <div className={styles.dsfbsdf}>
+                        <button className="btn125">Call Anytime</button>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-12">
-                  <div className="dfngjhdfgdf">
+                  <div className={styles.dfngjhdfgdf}>
                     <div className="row">
                       <div className="col-lg-6">
-                        <div className="fbgfjhg">
-                          <div className="nbgdfgdf">
+                        <div className={styles.fbgfjhg}>
+                          <div className={styles.nbgdfgdf}>
                             <h2>
                               {serviceResponse.data?.fifth_section_title &&
                                 serviceResponse.data.fifth_section_title}
@@ -147,7 +147,7 @@ export const Template32 = ({ serviceResponse, slug }) => {
                       </div>
 
                       <div className="col-lg-6">
-                        <div className="mnbfd55">
+                        <div className={styles.mnbfd55}>
                           {serviceResponse.data?.fifth_section_image && (
                             <img
                               src={`${serviceResponse.image_url}/Template_32/${serviceResponse.data.fifth_section_image}`}
@@ -166,9 +166,9 @@ export const Template32 = ({ serviceResponse, slug }) => {
 
         <ServiceEnquiryForm loading={setLoading} slug={slug} />
 
-        <div className="fjhfdfgdfg">
+        <div className={styles.fjhfdfgdfg}>
           <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
               <h2>
                 {serviceResponse.data?.sixth_section_title &&
                   serviceResponse.data.sixth_section_title}
