@@ -59,7 +59,7 @@ export const Home = () => {
   }, [handleScroll]); // ✅ add handleScroll here
 
   const [timeLeft, setTimeLeft] = useState({});
-  const [expired, setExpired] = useState(false);
+  // const [expired, setExpired] = useState(false);
 
   const targetDate = "2025-08-28T23:59:59";
 
@@ -69,7 +69,7 @@ export const Home = () => {
       const distance = new Date(targetDate).getTime() - now;
 
       if (distance <= 0) {
-        setExpired(true);
+        // setExpired(true);
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
         return;
       }
@@ -1202,7 +1202,7 @@ export const Home = () => {
                         <div className="people__info">
                           <ul className="people__social">
                             <li>
-                              <a href="#">
+                              <a href="/">
                                 <i className="fa-solid fa-globe" />
                               </a>
                             </li>
@@ -1219,7 +1219,7 @@ export const Home = () => {
                           <p className="people__desc">{ourClient.desc}</p>
                         </div>
                         <div className="people__btn">
-                          <a href="#">Contact Us</a>
+                          <a href="/">Contact Us</a>
                         </div>
                       </div>
                     </SwiperSlide>
