@@ -103,8 +103,6 @@ export const Careers = () => {
               />
 
                 <p>A job description&nbsp;<strong>summarizes the essential responsibilities, activities, qualifications and skills for a role</strong>. Also known as a JD, this document describes the type of work performed.</p>
-
-              <h5></h5>
             </div>
 
             <div className="c-s-1-inner-form">
@@ -256,7 +254,7 @@ export const Careers = () => {
                           />
                           <label for="terms">
                             I have read and agreed with{" "}
-                            <a href="">the terms and conditions.</a>
+                            <p>the terms and conditions.</p>
                           </label>
                         </li>
 

@@ -231,8 +231,8 @@ export const Template46 = ({ serviceResponse, slug }) => {
                             dangerouslySetInnerHTML={{
                               __html:
                                 serviceResponse.data
-                                  ?.fourth_section_title_four &&
-                                serviceResponse.data.fourth_section_title_four,
+                                  ?.fourth_section_description_four &&
+                                serviceResponse.data.fourth_section_description_four,
                             }}
                           />
                         </div>
