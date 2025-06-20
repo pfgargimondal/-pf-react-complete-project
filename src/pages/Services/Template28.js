@@ -1,4 +1,4 @@
-import "./Css/Template28.css";
+import styles from "./Css/Template28.module.css";
 import { useState } from "react";
 import ServiceEnquiryForm from "./FormComponent/ServiceEnquiryForm";
 import { Link } from "react-router-dom";
@@ -13,10 +13,10 @@ export const Template28 = ({ serviceResponse, slug }) => {
       {loading && <Loader />}
       <main>
         <div
-          className="dfgjhfgd"
+          className={styles.dfgjhfgd}
           style={{ background: "url(./images/afros.png)" }}
         >
-          <div className="sdfghdfgdf col-lg-6">
+          <div className={`${styles.sdfghdfgdf} col-lg-6`}>
             <h1 className="mt-0 mb-0">
               {serviceResponse.data?.banner_title &&
                 serviceResponse.data.banner_title}
@@ -27,7 +27,7 @@ export const Template28 = ({ serviceResponse, slug }) => {
                 serviceResponse.data.banner_description}
             </p>
 
-            <div className="vbddds">
+            <div className={styles.vbddds}>
               <Link to="/contact-us" className="btn125">
                 Contact Us
               </Link>
@@ -35,7 +35,7 @@ export const Template28 = ({ serviceResponse, slug }) => {
             </div>
           </div>
 
-          <div className="dbfghsdf col-lg-6">
+          <div className={`${styles.dbfghsdf} col-lg-6`}>
             {serviceResponse.data?.banner_image && (
               <img
                 src={`${serviceResponse.image_url}/Templete_28/${serviceResponse.data.banner_image}`}
@@ -45,9 +45,9 @@ export const Template28 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="fjhfdfgdfg">
+        <div className={styles.fjhfdfgdfg}>
           <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
               <h2>
                 {serviceResponse.data?.second_section_title &&
                   serviceResponse.data.second_section_title}
@@ -66,9 +66,9 @@ export const Template28 = ({ serviceResponse, slug }) => {
 
         <ServiceEnquiryForm loading={setLoading} slug={slug} />
 
-        <div className="dfbghdfgdfgdf">
+        <div className={styles.dfbghdfgdfgdf}>
           <div className="custom-container">
-            <div className="mgjhbdfg">
+            <div className={styles.mgjhbdfg}>
               <h2>
                 {serviceResponse.data?.third_section_title &&
                   serviceResponse.data.third_section_title}
@@ -85,11 +85,11 @@ export const Template28 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="iudniuwehirwerr py-5">
+        <div className={`${styles.iudniuwehirwerr} py-5`}>
           <div className="container-fluid px-5">
             <div className="row">
               <div className="col-lg-6 mb-4">
-                <div className="duienwuriew_inner sdvdfgevtefr">
+                <div className={`${styles.duienwuriew_inner} ${styles.sdvdfgevtefr}`}>
                   <h2 className="p-4">
                     {serviceResponse.data?.fourth_section_title_one &&
                       serviceResponse.data.fourth_section_title_one}
@@ -103,7 +103,7 @@ export const Template28 = ({ serviceResponse, slug }) => {
                     />
                   )}
 
-                  <div className="oioinmewrrr position-absolute p-4 pt-0">
+                  <div className={`${styles.oioinmewrrr} position-absolute p-4 pt-0`}>
                     <div
                       className="mb-0"
                       dangerouslySetInnerHTML={{
@@ -120,7 +120,7 @@ export const Template28 = ({ serviceResponse, slug }) => {
               <div className="col-lg-6">
                 <div className="row">
                   <div className="col-lg-6 mb-4">
-                    <div className="duienwuriew_inner sdvfgterfgvt">
+                    <div className={`${styles.duienwuriew_inner} ${styles.sdvfgterfgvt}`}>
                       <h4 className="p-3">
                         {serviceResponse.data?.fourth_section_title_two &&
                           serviceResponse.data.fourth_section_title_two}
@@ -134,7 +134,7 @@ export const Template28 = ({ serviceResponse, slug }) => {
                         />
                       )}
 
-                      <div className="oioinmewrrr position-absolute p-4 pt-0">
+                      <div className={`${styles.oioinmewrrr} position-absolute p-4 pt-0`}>
                         <div
                           className="mb-0"
                           dangerouslySetInnerHTML={{
@@ -150,7 +150,7 @@ export const Template28 = ({ serviceResponse, slug }) => {
                   </div>
 
                   <div className="col-lg-6 mb-4">
-                    <div className="duienwuriew_inner cddgbgfreeqe">
+                    <div className={`${styles.duienwuriew_inner} ${styles.cddgbgfreeqe}`}>
                       <h4 className="p-3">
                         {serviceResponse.data?.fourth_section_title_three &&
                           serviceResponse.data.fourth_section_title_three}
@@ -164,7 +164,7 @@ export const Template28 = ({ serviceResponse, slug }) => {
                         />
                       )}
 
-                      <div className="oioinmewrrr position-absolute p-4 pt-0">
+                      <div className={`${styles.oioinmewrrr} position-absolute p-4 pt-0`}>
                         <div
                           className="mb-0"
                           dangerouslySetInnerHTML={{
@@ -180,7 +180,7 @@ export const Template28 = ({ serviceResponse, slug }) => {
                   </div>
 
                   <div className="col-lg-6 mb-4">
-                    <div className="duienwuriew_inner dsfgfyherrtt">
+                    <div className={`${styles.duienwuriew_inner} ${styles.dsfgfyherrtt}`}>
                       <h4 className="p-3">
                         {serviceResponse.data?.fourth_section_title_four &&
                           serviceResponse.data.fourth_section_title_four}
@@ -193,7 +193,7 @@ export const Template28 = ({ serviceResponse, slug }) => {
                           className="img-fluid"
                         />
                       )}
-                      <div className="oioinmewrrr position-absolute p-4 pt-0">
+                      <div className={`${styles.oioinmewrrr} position-absolute p-4 pt-0`}>
                         <div
                           className="mb-0"
                           dangerouslySetInnerHTML={{
@@ -209,7 +209,7 @@ export const Template28 = ({ serviceResponse, slug }) => {
                   </div>
 
                   <div className="col-lg-6 mb-4">
-                    <div className="duienwuriew_inner sadfvfrthrrer">
+                    <div className={`${styles.duienwuriew_inner} ${styles.sadfvfrthrrer}`}>
                       <h4 className="p-3">
                         {serviceResponse.data?.fourth_section_title_five &&
                           serviceResponse.data.fourth_section_title_five}
@@ -222,7 +222,7 @@ export const Template28 = ({ serviceResponse, slug }) => {
                           className="img-fluid"
                         />
                       )}
-                      <div className="oioinmewrrr position-absolute p-4 pt-0">
+                      <div className={`${styles.oioinmewrrr} position-absolute p-4 pt-0`}>
                         <div
                           className="mb-0"
                           dangerouslySetInnerHTML={{

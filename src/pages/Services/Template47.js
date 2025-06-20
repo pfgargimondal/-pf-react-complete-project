@@ -1,4 +1,4 @@
-import "./Css/Template47.css";
+import styles from "./Css/Template47.module.css";
 import { useState } from "react";
 import ServiceEnquiryForm from "./FormComponent/ServiceEnquiryForm";
 import { Link } from "react-router-dom";
@@ -12,27 +12,21 @@ export const Template47 = ({ serviceResponse, slug }) => {
     <div>
       {loading && <Loader />}
       <main>
-        <div className="dfgjhfgd">
-          <div className="sdfghdfgdf col-lg-6">
+        <div className={styles.dfgjhfgd}>
+          <div className={`${styles.sdfghdfgdf} col-lg-6`}>
             <h1 className="mt-0 mb-0">
-              {serviceResponse.data?.banner_title &&
-                serviceResponse.data.banner_title}
+              {serviceResponse.data?.banner_title && serviceResponse.data.banner_title}
             </h1>
-
             <p className="mt-3 mb-5">
-              {serviceResponse.data?.banner_description &&
-                serviceResponse.data.banner_description}
+              {serviceResponse.data?.banner_description && serviceResponse.data.banner_description}
             </p>
-
-            <div className="vbddds">
-              <Link to="/contact-us" className="btn125">
-                Contact Us
-              </Link>
+            <div className={styles.vbddds}>
+              <Link to="/contact-us" className="btn125">Contact Us</Link>
               <button className="btn126">Get In Touch With Us</button>
             </div>
           </div>
 
-          <div className="dbfghsdf col-lg-6">
+          <div className={`${styles.dbfghsdf} col-lg-6`}>
             {serviceResponse.data?.banner_image && (
               <img
                 src={`${serviceResponse.image_url}/Templete_47/${serviceResponse.data.banner_image}`}
@@ -42,20 +36,14 @@ export const Template47 = ({ serviceResponse, slug }) => {
           </div>
         </div>
 
-        <div className="fjhfdfgdfg">
+        <div className={styles.fjhfdfgdfg}>
           <div className="custom-container">
-            <div className="sdfsdfsdf">
-              <h2>
-                {serviceResponse.data?.second_section_title &&
-                  serviceResponse.data.second_section_title}
-              </h2>
-
+            <div className={styles.sdfsdfsdf}>
+              <h2>{serviceResponse.data?.second_section_title && serviceResponse.data.second_section_title}</h2>
               <div
                 className="pt-4"
                 dangerouslySetInnerHTML={{
-                  __html:
-                    serviceResponse.data?.second_section_description &&
-                    serviceResponse.data.second_section_description,
+                  __html: serviceResponse.data?.second_section_description && serviceResponse.data.second_section_description,
                 }}
               />
             </div>
@@ -64,30 +52,26 @@ export const Template47 = ({ serviceResponse, slug }) => {
 
         <ServiceEnquiryForm loading={setLoading} slug={slug} />
 
-        <div className="dfbghdfgdfgdf sfmlkdfdff">
+        <div className={`${styles.dfbghdfgdfgdf} ${styles.sfmlkdfdff}`}>
           <div className="custom-container">
-            <div className="mgjhbdfg">
+            <div className={styles.mgjhbdfg}>
               <h2 className="mb-4">
-                {serviceResponse.data?.third_section_title &&
-                  serviceResponse.data.third_section_title}
+                {serviceResponse.data?.third_section_title && serviceResponse.data.third_section_title}
               </h2>
-
               <div
                 dangerouslySetInnerHTML={{
-                  __html:
-                    serviceResponse.data?.third_section_description &&
-                    serviceResponse.data.third_section_description,
+                  __html: serviceResponse.data?.third_section_description && serviceResponse.data.third_section_description,
                 }}
               />
             </div>
           </div>
         </div>
 
-        <div className="duiewmjroiweorrr mt-5">
+        <div className={`mt-5 ${styles.duiewmjroiweorrr}`}>
           <div className="container-fluid px-5">
             <div className="row">
               <div className="col-lg-4 mb-4">
-                <div className="oidmnewr_left">
+                <div className={styles.oidmnewr_left}>
                   {serviceResponse.data?.fourth_section_image_one && (
                     <img
                       src={`${serviceResponse.image_url}/Templete_47/${serviceResponse.data.fourth_section_image_one}`}
@@ -95,26 +79,21 @@ export const Template47 = ({ serviceResponse, slug }) => {
                       className="img-fluid"
                     />
                   )}
-
                   <h4 className="mb-4">
-                    {serviceResponse.data?.fourth_section_title_one &&
-                      serviceResponse.data.fourth_section_title_one}
+                    {serviceResponse.data?.fourth_section_title_one && serviceResponse.data.fourth_section_title_one}
                   </h4>
-
                   <div
                     className="mb-0"
                     dangerouslySetInnerHTML={{
-                      __html:
-                        serviceResponse.data?.fourth_section_description_one &&
-                        serviceResponse.data.fourth_section_description_one,
+                      __html: serviceResponse.data?.fourth_section_description_one && serviceResponse.data.fourth_section_description_one,
                     }}
                   />
                 </div>
               </div>
 
               <div className="col-lg-4 mb-4">
-                <div className="oidmnewr_middle sticky-top">
-                  {serviceResponse.data?.fourth_section_image_one && (
+                <div className={`${styles.oidmnewr_middle} sticky-top`}>
+                  {serviceResponse.data?.fourth_section_main_image && (
                     <img
                       src={`${serviceResponse.image_url}/Templete_47/${serviceResponse.data.fourth_section_main_image}`}
                       alt=""
@@ -125,7 +104,7 @@ export const Template47 = ({ serviceResponse, slug }) => {
               </div>
 
               <div className="col-lg-4 mb-4">
-                <div className="oidmnewr_right">
+                <div className={styles.oidmnewr_right}>
                   {serviceResponse.data?.fourth_section_image_two && (
                     <img
                       src={`${serviceResponse.image_url}/Templete_47/${serviceResponse.data.fourth_section_image_two}`}
@@ -133,18 +112,13 @@ export const Template47 = ({ serviceResponse, slug }) => {
                       className="img-fluid"
                     />
                   )}
-
                   <h4 className="mb-4">
-                    {serviceResponse.data?.fourth_section_title_two &&
-                      serviceResponse.data.fourth_section_title_two}
+                    {serviceResponse.data?.fourth_section_title_two && serviceResponse.data.fourth_section_title_two}
                   </h4>
-
                   <div
                     className="mb-0"
                     dangerouslySetInnerHTML={{
-                      __html:
-                        serviceResponse.data?.fourth_section_description_two &&
-                        serviceResponse.data.fourth_section_description_two,
+                      __html: serviceResponse.data?.fourth_section_description_two && serviceResponse.data.fourth_section_description_two,
                     }}
                   />
                 </div>
@@ -152,6 +126,7 @@ export const Template47 = ({ serviceResponse, slug }) => {
             </div>
           </div>
         </div>
+
         <LastSectionComponent />
       </main>
     </div>

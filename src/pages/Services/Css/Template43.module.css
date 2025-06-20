@@ -2,6 +2,40 @@
 /*start  link building seo css*/
 /*start  link building seo css*/
 /*start  link building seo css*/
+
+.dbfghsdf img{
+    width: 100%;
+    height: auto;
+}
+.sdfghdfgdf {
+  width: 50%;
+  float: left;
+  padding: 70px;
+}
+.sdfghdfgdf h1 { 
+  color: var(--main-blue-color);
+  font-weight: bold;
+}
+.sdfghdfgdf p {
+  color: var(--medium-text-color);
+}
+
+.dfgjhfgd {
+  display: flex;
+  padding: 1rem 0 3rem 0;
+}
+
+.sdfsdfsdf h2 {
+  color: var(--main-blue-color);
+}
+.sdfsdfsdf p {
+  color: var(--medium-text-color);
+}
+
+.fjhfdfgdfg {
+  width: 100%;
+  padding: 40px 0;
+}
 .sdcbvghsdcsddvfsd {
   width: 100%;
   padding: 40px 0;
@@ -222,4 +256,8 @@
 
 .coidhswine_overlay{
     background: rgba(255, 255, 255, 0.5);
+}
+
+.deiwnrjwenr_left h2{
+    color: var(--main-blue-color);
 }
