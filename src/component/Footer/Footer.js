@@ -81,28 +81,24 @@ export const Footer = () => {
         <div className="social-icons">
           <a
             href="https://www.facebook.com/passionatefuturist/"
-            target="_blank"
             className="s_facebook"
           >
             <i className="fa-brands fa-facebook-f" />
           </a>
           <a
             href="https://twitter.com/passionatefutu1"
-            target="_blank"
             className="s_twitter"
           >
             <i className="fa-brands fa-twitter" />
           </a>
           <a
             href="https://www.linkedin.com/company/passionate-futurist-solutions-pvt-ltd/"
-            target="_blank"
             className="s_linkedin"
           >
             <i className="fa-brands fa-linkedin-in" />
           </a>
           <a
             href="https://www.youtube.com/channel/UCRA6X9Cu-DHTTaWFkgSEtAw"
-            target="_blank"
             className="s_youtube"
           >
             <i className="fa-brands fa-youtube" />
