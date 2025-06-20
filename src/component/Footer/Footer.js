@@ -9,52 +9,52 @@ export const Footer = () => {
         <h4>Navigate</h4>
         <ul className="footer-menu">
           <li>
-            {" "}
-            <a href="/" target="_blank" rel="noopener noreferrer">
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a href="/" target="_blank">
               <i className="fa fa-home" /> Home
-            </a>{" "}
+            </a>
           </li>
           <li>
-            {" "}
-            <a href="/about-us" target="_blank" rel="noopener noreferrer">
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a href="/about-us" target="_blank">
               <i className="fa fa-users" /> About Us
-            </a>{" "}
+            </a>
           </li>
           <li>
-            {" "}
-            <a href="/services" target="_blank" rel="noopener noreferrer">
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a href="/services" target="_blank">
               <i className="fa fa-handshake-o" /> Services
-            </a>{" "}
+            </a>
           </li>
           <li>
-            {" "}
-            <a href="/our-portfolio" target="_blank" rel="noopener noreferrer">
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a href="/our-portfolio" target="_blank">
               <i className="fa fa-briefcase" /> Portfolio
-            </a>{" "}
+            </a>
           </li>
           <li>
-            {" "}
-            <a href="/business-register" target="_blank" rel="noopener noreferrer">
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a href="/business-register" target="_blank">
               <i className="fa fa-pencil-square-o" /> Business Register
-            </a>{" "}
+            </a>
           </li>
           <li>
-            {" "}
-            <a href="/careers" target="_blank" rel="noopener noreferrer">
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a href="/careers" target="_blank" >
               <i className="fa fa-signal" /> Career
-            </a>{" "}
+            </a>
           </li>
           <li>
-            {" "}
-            <a href="/blogs" target="_blank" rel="noopener noreferrer">
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a href="/blogs" target="_blank">
               <i className="fa fa-file-text-o" /> Blog
-            </a>{" "}
+            </a>
           </li>
           <li>
-            {" "}
-            <a href="/contact-us" target="_blank" rel="noopener noreferrer">
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a href="/contact-us" target="_blank">
               <i className="fa fa-envelope-o" /> Contact
-            </a>{" "}
+            </a>
           </li>
         </ul>
       </div>
