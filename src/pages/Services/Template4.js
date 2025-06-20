@@ -1,6 +1,5 @@
 import styles from "./Css/Template4.module.css";
-import { useState, useEffect } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { useState } from "react";
 import ServiceForm from "./FormComponent/ServiceForm";
 import { Link } from "react-router-dom";
 import LastSectionComponent from "./SectionComponent/LastSectionComponent";
@@ -43,7 +42,6 @@ export const Template4 = ({ serviceResponse, slug }) => {
               {serviceResponse.data?.banner_image && (
                 <img
                   src={`${serviceResponse.image_url}/Template_4/${serviceResponse.data.banner_image}`}
-                  alt=""
                 />
               )}
             </div>

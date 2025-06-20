@@ -90,7 +90,7 @@ export const Template8 = ({ serviceResponse, slug }) => {
                   {serviceResponse.data?.fourth_section_image && (
                     <img
                       src={`${serviceResponse.image_url}/Template_8/${serviceResponse.data.fourth_section_image}`}
-                      className="img-fluid"
+                      className="img-fluid" alt=""
                     />
                   )}
                 </div>
@@ -140,7 +140,7 @@ export const Template8 = ({ serviceResponse, slug }) => {
                   {serviceResponse.data?.fifth_section_image && (
                     <img
                       src={`${serviceResponse.image_url}/Template_8/${serviceResponse.data.fifth_section_image}`}
-                      className="img-fluid"
+                      className="img-fluid" alt=""
                     />
                   )}
                 </div>
@@ -152,7 +152,7 @@ export const Template8 = ({ serviceResponse, slug }) => {
         <div className={styles.xnjhxffgdf}>
           {serviceResponse.data?.sixth_section_image && (
             <img
-              src={`${serviceResponse.image_url}/Template_8/${serviceResponse.data.sixth_section_image}`}
+              src={`${serviceResponse.image_url}/Template_8/${serviceResponse.data.sixth_section_image}`} alt=""
             />
           )}
         </div>

@@ -3,7 +3,7 @@ import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import ServiceForm  from "./FormComponent/ServiceForm";
 import LastSectionComponent from "./SectionComponent/LastSectionComponent";
 import http from "../../http";

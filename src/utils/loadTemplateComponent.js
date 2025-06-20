@@ -1,4 +1,3 @@
-import React from "react";
 import {Template1} from "../pages/Services/Template1";
 import {Template2} from "../pages/Services/Template2";
 import {Template3} from "../pages/Services/Template3";
