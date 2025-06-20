@@ -156,7 +156,7 @@
   flex-grow: 1;
   max-width: 100%;
 }
-.tab-menu ul li a {
+.tab-menu ul li > div {
   display: inline-block;
   padding: 18px 26px;
   display: block;
@@ -164,12 +164,12 @@
   transition: 0.5s all;
   border-left: 1px solid #fff;
 }
-.tab-menu ul li a:hover {
+.tab-menu ul li > div:hover {
   background: #d0d062;
   color: #fff;
   text-decoration: none;
 }
-.tab-menu ul li a.active {
+.tab-menu ul li > div.active {
   border-left: 1px solid var(--main-blue-common-color);
   color: #000;
   text-decoration: none;

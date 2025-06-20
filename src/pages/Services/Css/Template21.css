@@ -155,7 +155,7 @@
 .zsdcvdfgfryhfre .tab-menu ul li{
 	list-style-type: none;
 }
-.zsdcvdfgfryhfre .tab-menu ul li a{
+.zsdcvdfgfryhfre .tab-menu ul li > div{
 	text-decoration: none;
 	color: #000;
 	font-size: 1.4rem;
@@ -164,7 +164,7 @@
 	border-radius: 10px;
 	display: block;
 }
-.zsdcvdfgfryhfre .tab-menu ul li a.active-a{
+.zsdcvdfgfryhfre .tab-menu ul li > div.active-a{
 	color: #fff;
 	background: var(--button-main-blue-color);
 }

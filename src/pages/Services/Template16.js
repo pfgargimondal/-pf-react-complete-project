@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 import LastSectionComponent from "./SectionComponent/LastSectionComponent";
 import Loader from "../../component/Loader/Loader";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from 'react-router-dom';
 
 export const Template16 = ({ serviceResponse, slug }) => {
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
   return (
     <div>
       {loading && <Loader />}
@@ -140,9 +142,9 @@ export const Template16 = ({ serviceResponse, slug }) => {
                                 .fourth_section_description_one,
                           }}
                         />
-                        <a href="" className="position-relative">
+                        <Link to="/contact-us" className="position-relative">
                           <i className="fa-solid fa-arrow-right position-absolute"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -174,9 +176,9 @@ export const Template16 = ({ serviceResponse, slug }) => {
                                 .fourth_section_description_two,
                           }}
                         />
-                        <a href="" className="position-relative">
+                        <Link to="/contact-us" className="position-relative">
                           <i className="fa-solid fa-arrow-right position-absolute"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
 

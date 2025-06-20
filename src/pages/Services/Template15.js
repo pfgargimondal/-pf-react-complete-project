@@ -86,8 +86,7 @@ export const Template15 =({ serviceResponse, slug }) =>{
           <div className={`tab-menu ${styles.sdcsdfeewwwww}`}>
             <ul>
               <li>
-                <a
-                  href="#"
+                <div
                   className={activeTab === 'tab-1' ? styles.active : ''}
                   data-rel="tab-1"
                   onClick={(e) => {
@@ -96,11 +95,10 @@ export const Template15 =({ serviceResponse, slug }) =>{
                   }}
                 >
                   {serviceResponse.data?.fourth_section_heading}
-                </a>
+                </div>
               </li>
               <li>
-                <a
-                  href="#"
+                <div
                   className={activeTab === 'tab-2' ? styles.active : ''}
                   data-rel="tab-2"
                   onClick={(e) => {
@@ -109,7 +107,7 @@ export const Template15 =({ serviceResponse, slug }) =>{
                   }}
                 >
                   {serviceResponse.data?.fifth_section_heading}
-                </a>
+                </div>
               </li>
             </ul>
           </div>

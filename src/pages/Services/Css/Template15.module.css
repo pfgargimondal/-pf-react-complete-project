@@ -385,9 +385,9 @@
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-width: 100%;
-  text-align: center;
+  text-align: center; 
 }
-.sdcsdfeewwwww ul li a {
+.sdcsdfeewwwww ul li > div {
   color: #000;
   text-transform: uppercase;
   letter-spacing: 0.44px;
@@ -403,12 +403,12 @@
 .sdcvergtrtyerwer h2{
     color: var(--main-blue-color);
 }
-.sdcsdfeewwwww ul li a:hover {
+.sdcsdfeewwwww ul li > div:hover {
   background: var(--button-main-blue-color);
   color: #fff;
   text-decoration: none;
 }
-.sdcsdfeewwwww ul li a.active {
+.sdcsdfeewwwww ul li > div.active {
   color: #fff;
   text-decoration: none;
   background: var(--button-main-blue-color);

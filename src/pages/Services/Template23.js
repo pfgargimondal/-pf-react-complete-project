@@ -12,7 +12,7 @@ export const Template23 = ({ serviceResponse, slug }) => {
   const [activeTab, setActiveTab] = useState("tab-1");
 
   const tabs = [
-    {
+    { 
       id: "tab-1",
       title: serviceResponse.data?.third_section_title_one,
       description: serviceResponse.data?.third_section_description_one,
@@ -95,8 +95,7 @@ export const Template23 = ({ serviceResponse, slug }) => {
                   <ul>
                     {tabs.map((tab) => (
                       <li key={tab.id}>
-                        <a
-                          href="#"
+                        <div
                           className={activeTab === tab.id ? styles.active : ""}
                           data-rel={tab.id}
                           onClick={(e) => {
@@ -111,7 +110,7 @@ export const Template23 = ({ serviceResponse, slug }) => {
                               __html: tab.description,
                             }}
                           />
-                        </a>
+                        </div>
                       </li>
                     ))}
                   </ul>

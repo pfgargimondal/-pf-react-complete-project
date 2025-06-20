@@ -133,11 +133,10 @@ export const Template21 =({ serviceResponse, slug }) => {
         <div className="container-fluid px-5">
             <div className="tab-container d-flex">
                 <div className="tab-menu me-4">
-                    <ul>
+                    <ul> 
                         {tabs.map((tab) => (
                             <li key={tab.id}>
-                            <a
-                                href="#"
+                            <div
                                 className={`tab-a ${activeTab === tab.id ? 'active-a' : ''}`}
                                 data-id={tab.id}
                                 onClick={(e) => {
@@ -146,7 +145,7 @@ export const Template21 =({ serviceResponse, slug }) => {
                                 }}
                             >
                                 {tab.title}
-                            </a>
+                            </div>
                             </li>
                         ))}
                     </ul>
