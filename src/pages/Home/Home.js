@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -28,7 +28,7 @@ export const Home = () => {
     );
   };
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const elements = [
       { ref: elementOneRef.current, className: "animateone" },
       { ref: elementTwoRef.current, className: "animatetwo" },
@@ -44,10 +44,9 @@ export const Home = () => {
         }
       }
     });
-  };
+  }, []); // safe because refs don't change
 
   useEffect(() => {
-    // Delay scroll binding to ensure DOM refs are set
     const timeoutId = setTimeout(() => {
       window.addEventListener("scroll", handleScroll);
       handleScroll(); // Initial trigger
@@ -57,7 +56,7 @@ export const Home = () => {
       clearTimeout(timeoutId);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]); // ✅ add handleScroll here
 
   const [timeLeft, setTimeLeft] = useState({});
   const [expired, setExpired] = useState(false);
