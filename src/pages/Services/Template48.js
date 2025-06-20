@@ -1,6 +1,5 @@
 import styles from "./Css/Template48.module.css";
-import { useState, useEffect } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { useState } from "react";
 import ServiceEnquiryForm from "./FormComponent/ServiceEnquiryForm";
 import { Link } from "react-router-dom";
 import LastSectionComponent from "./SectionComponent/LastSectionComponent";

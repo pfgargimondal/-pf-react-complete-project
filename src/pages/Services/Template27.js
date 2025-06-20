@@ -1,6 +1,5 @@
 import "./Css/Template27.css";
 import { useState, useEffect, useRef } from "react";
-import { ToastContainer, toast } from "react-toastify";
 import ServiceEnquiryForm from "./FormComponent/ServiceEnquiryForm";
 import { Link } from "react-router-dom";
 import LastSectionComponent from "./SectionComponent/LastSectionComponent";
