@@ -9,7 +9,7 @@ export const Footer = () => {
         <h4>Navigate</h4>
         <ul className="footer-menu">
           <li>
-            // eslint-disable-next-line
+            {/* // eslint-disable-next-line */}
             <a href="/" target="_blank">
               <i className="fa fa-home" /> Home
             </a>
