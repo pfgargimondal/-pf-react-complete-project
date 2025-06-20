@@ -19,7 +19,6 @@ export const Services = () => {
                         
                         <h1>Digital Marketing Services Company</h1>
                         
-                        <h4></h4>
                     </div>
                 </div>
              </div>
@@ -51,7 +50,6 @@ export const Services = () => {
                         
                         <h1>Content Writing Services kolkata</h1>
                         
-                        <h4></h4>
                     </div>
                 </div>
              </div>
@@ -95,11 +93,9 @@ export const Services = () => {
                 
         <p>Best Digital Marketing Services for Transforming Your Business into Reality</p>
                 
-        <a href="" class="btn-container" target="_blank">
             <button class="btn s-s-4-r-button btn-warning">Learn More 
                 <i class="fa-regular s-s-4-r-b-icon fa-circle-right"></i>
             </button>
-        </a>
     </div>
 </div>
 <div class="col-lg-3 mb-4">
@@ -116,11 +112,9 @@ export const Services = () => {
                 
         <p>Graphics Designing and Animation Services in Kolkata</p>
                 
-        <a href="" class="btn-container" target="_blank">
             <button class="btn s-s-4-r-button btn-warning">Learn More 
                 <i class="fa-regular s-s-4-r-b-icon fa-circle-right"></i>
             </button>
-        </a>
     </div>
 </div>
 <div class="col-lg-3 mb-4">
@@ -137,11 +131,9 @@ export const Services = () => {
                 
         <p>High-Quality & Unique Content Writing Services at Affordable Prices</p>
                 
-        <a href="" class="btn-container" target="_blank">
             <button class="btn s-s-4-r-button btn-warning">Learn More 
                 <i class="fa-regular s-s-4-r-b-icon fa-circle-right"></i>
             </button>
-        </a>
     </div>
 </div>
 <div class="col-lg-3 mb-4">
@@ -158,11 +150,9 @@ export const Services = () => {
                 
         <p>Use Passionate Futurist’s Web Design Services for Better Customer Experiences</p>
                 
-        <a href="" class="btn-container" target="_blank">
             <button class="btn s-s-4-r-button btn-warning">Learn More 
                 <i class="fa-regular s-s-4-r-b-icon fa-circle-right"></i>
             </button>
-        </a>
     </div>
 </div>
         </div>
@@ -244,7 +234,7 @@ export const Services = () => {
               </div>
             </div>
          
-            <a href="#"><button class="btn l-t-button btn-warning">Lets talk <i class="fa-brands l-t-b-icon fa-rocketchat"></i></button></a>
+            <button class="btn l-t-button btn-warning">Lets talk <i class="fa-brands l-t-b-icon fa-rocketchat"></i></button>
           </div>
         </div>
         <div class="col-lg-6 mb-4">
@@ -329,19 +319,19 @@ export const Services = () => {
                   <div class="active">
                     <p>Making online friends is so 2008, but 2023 is the time to make your brand with digital marketing</p>
   
-                    <a href="#"><button class="btn s-s-4-r-button btn-warning">Learn More <i class="fa-regular s-s-4-r-b-icon fa-circle-right"></i></button></a>
+                    <button class="btn s-s-4-r-button btn-warning">Learn More <i class="fa-regular s-s-4-r-b-icon fa-circle-right"></i></button>
                   </div>
   
                   <div>
                     <p>Content is the key and engagement is the lock, making everyone safe in your lock and key</p>
   
-                    <a href="#"><button class="btn s-s-4-r-button btn-warning">Learn More <i class="fa-regular s-s-4-r-b-icon fa-circle-right"></i></button></a>
+                    <button class="btn s-s-4-r-button btn-warning">Learn More <i class="fa-regular s-s-4-r-b-icon fa-circle-right"></i></button>
                   </div>
   
                   <div>
                     <p>Developing applications is the base of the digital world. </p>
   
-                    <a href="#"><button class="btn s-s-4-r-button btn-warning">Learn More <i class="fa-regular s-s-4-r-b-icon fa-circle-right"></i></button></a>
+                    <button class="btn s-s-4-r-button btn-warning">Learn More <i class="fa-regular s-s-4-r-b-icon fa-circle-right"></i></button>
                   </div>
                 </div>
               </div>              
