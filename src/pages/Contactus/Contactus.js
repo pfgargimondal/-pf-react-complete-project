@@ -102,7 +102,7 @@ export const Contactus = () => {
                 <span>Contact</span>
               </strong>
 
-              <a href="#">Learn More</a>
+              <p>Learn More</p>
             </div>
           </div>
         </section>
@@ -239,7 +239,7 @@ export const Contactus = () => {
 
                         <ul className="c-u-s">
                           <li>
-                            <a href="https://www.facebook.com/passionatefuturist/" target="blank">
+                            <a href="https://www.facebook.com/passionatefuturist/">
                               <i className="fa-brands fa-facebook-f"></i>
                               <div className="box">
                                 <span></span>
@@ -250,7 +250,7 @@ export const Contactus = () => {
                             </a>
                           </li>
                           <li>
-                            <a href="https://www.linkedin.com/company/passionate-futurist-solutions-pvt-ltd/" target="blank">
+                            <a href="https://www.linkedin.com/company/passionate-futurist-solutions-pvt-ltd/">
                               <i className="fa-brands fa-linkedin"></i>
                               <div className="box">
                                 <span></span>
@@ -276,7 +276,7 @@ export const Contactus = () => {
           <hr style={{ width: '5%', margin: 'auto', opacity: '1', paddingBottom: '2px', backgroundColor: 'var(--main-blue-color)' }}/>
 
           <div className="contact-us-section-2-wrap">
-            <iframe
+            <iframe  title="Google Maps - Passionate Futurist Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.9273613988603!2d88.45831831446243!3d22.581819938324188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02753defab8509%3A0x2f82e81a6184b569!2sPassionate%20Futurist%20%7C%20Digital%20Marketing%20Company%20in%20Kolkata!5e0!3m2!1sen!2sus!4v1680077642675!5m2!1sen!2sus"
               width="100%"
               height="450"
