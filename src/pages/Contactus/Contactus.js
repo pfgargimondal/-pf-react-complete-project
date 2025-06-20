@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import http from "../../http";
 import Loader from "../../component/Loader/Loader";
 import { ToastContainer, toast } from "react-toastify";
