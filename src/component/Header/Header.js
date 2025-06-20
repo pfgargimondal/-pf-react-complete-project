@@ -67,7 +67,7 @@ export const Header = ({CategoryDetails}) => {
                                     <div className="h-t-s-1">
                                         <a
                                             href="https://twitter.com/passionatefutu1"
-                                            target="_blank"
+                                            
                                         >
                                             {" "}
                                             <img
@@ -80,7 +80,7 @@ export const Header = ({CategoryDetails}) => {
                                     <div className="h-t-s-1">
                                         <a
                                             href="https://www.linkedin.com/company/passionate-futurist-solutions-pvt-ltd/"
-                                            target="_blank"
+                                            
                                         >
                                             {" "}
                                             <img
@@ -94,7 +94,7 @@ export const Header = ({CategoryDetails}) => {
                                     <div className="h-t-s-1">
                                         <a
                                             href="https://www.facebook.com/passionatefuturist/"
-                                            target="_blank"
+                                            
                                         >
                                             {" "}
                                             <img
@@ -108,7 +108,7 @@ export const Header = ({CategoryDetails}) => {
                                     <div className="h-t-s-1">
                                         <a
                                             href="https://www.youtube.com/channel/UCRA6X9Cu-DHTTaWFkgSEtAw"
-                                            target="_blank"
+                                            
                                         >
                                             <img
                                                 src={
