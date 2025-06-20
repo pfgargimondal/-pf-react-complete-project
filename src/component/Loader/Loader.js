@@ -1,12 +1,12 @@
-import React from "react";
 import "./Loader.css"; // optional for styling
 
 const Loader = () => {
   return (
-    <div className="global-loader">
-      <div className="spinner"></div>
-    </div>
+      <div className="loading">
+        <div></div>
+        <div></div>
+      </div>  
   );
 }; 
 
-export default Loader;
+export default Loader; 

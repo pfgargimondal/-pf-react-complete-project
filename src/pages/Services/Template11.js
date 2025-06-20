@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export const Template11 = ({ serviceResponse, slug }) => {
   const [loading, setLoading] = useState(false);
-  return (
+  return ( 
     <div>
       {loading && <Loader />}
       <main>

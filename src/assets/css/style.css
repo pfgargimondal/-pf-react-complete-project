@@ -77,3 +77,7 @@ button {
 main{
     padding-top: 5rem;
 }
+
+.middle-wrapper{
+    min-height: 80vh;
+}

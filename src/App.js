@@ -26,7 +26,8 @@ function App() {
   return (
     <div className="App">
       <Header CategoryDetails={CategoryDetails}/>  
-      <AllRoutes/>
+      <div className="middle-wrapper">
+        <AllRoutes/></div>      
       <Footer/>
     </div>
   );
