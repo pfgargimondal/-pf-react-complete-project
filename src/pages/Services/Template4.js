@@ -41,7 +41,7 @@ export const Template4 = ({ serviceResponse, slug }) => {
             <div className={`${styles.dbfghsdf} col-lg-6`}>
               {serviceResponse.data?.banner_image && (
                 <img
-                  src={`${serviceResponse.image_url}/Template_4/${serviceResponse.data.banner_image}`}
+                  src={`${serviceResponse.image_url}/Template_4/${serviceResponse.data.banner_image}`} alt=""
                 />
               )}
             </div>
@@ -127,7 +127,7 @@ export const Template4 = ({ serviceResponse, slug }) => {
                       {serviceResponse.data?.fourth_section_image && (
                         <img
                           src={`${serviceResponse.image_url}/Template_4/${serviceResponse.data.fourth_section_image}`}
-                          className="img-fluid"
+                          className="img-fluid" alt=""
                         />
                       )}
                     </div>
@@ -156,7 +156,7 @@ export const Template4 = ({ serviceResponse, slug }) => {
               {serviceResponse.data?.fifth_section_image && (
                 <img
                   src={`${serviceResponse.image_url}/Template_4/${serviceResponse.data.fifth_section_image}`}
-                  className="img-fluid"
+                  className="img-fluid" alt=""
                 />
               )}
             </div>
