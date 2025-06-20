@@ -9,50 +9,43 @@ export const Footer = () => {
         <h4>Navigate</h4>
         <ul className="footer-menu">
           <li>
-            {/* // eslint-disable-next-line */}
-            <a href="/" target="_blank">
+            <a href="/">
               <i className="fa fa-home" /> Home
             </a>
           </li>
           <li>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a href="/about-us" target="_blank">
+            <a href="/about-us">
               <i className="fa fa-users" /> About Us
             </a>
           </li>
           <li>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a href="/services" target="_blank">
+            
+            <a href="/services">
               <i className="fa fa-handshake-o" /> Services
             </a>
           </li>
           <li>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a href="/our-portfolio" target="_blank">
+            <a href="/our-portfolio">
               <i className="fa fa-briefcase" /> Portfolio
             </a>
           </li>
           <li>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a href="/business-register" target="_blank">
+            <a href="/business-register">
               <i className="fa fa-pencil-square-o" /> Business Register
             </a>
           </li>
           <li>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a href="/careers" target="_blank" >
+            <a href="/careers">
               <i className="fa fa-signal" /> Career
             </a>
           </li>
           <li>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a href="/blogs" target="_blank">
+            <a href="/blogs">
               <i className="fa fa-file-text-o" /> Blog
             </a>
           </li>
           <li>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a href="/contact-us" target="_blank">
+            <a href="/contact-us">
               <i className="fa fa-envelope-o" /> Contact
             </a>
           </li>
