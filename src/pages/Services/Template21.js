@@ -1,4 +1,4 @@
-import "./Css/Template21.css";
+import styles from "./Css/Template21.module.css";
 import { useState } from "react";
 import ServiceEnquiryForm from "./FormComponent/ServiceEnquiryForm";
 import { Link } from "react-router-dom";
@@ -36,15 +36,15 @@ export const Template21 =({ serviceResponse, slug }) => {
     <div>
         {loading && <Loader />}
       <main>
-    <div className="dfgjhfgd">
-        <div className="sdfghdfgdf col-lg-6">
+    <div className={styles.dfgjhfgd}>
+        <div className={`${styles.sdfghdfgdf} col-lg-6`}>
             <h1 className="mt-0 mb-0">{serviceResponse.data?.banner_title &&
                 serviceResponse.data.banner_title}</h1>
     
             <p className="mt-3 mb-5">{serviceResponse.data?.banner_description &&
                 serviceResponse.data.banner_description}</p>
     
-            <div className="vbddds">
+            <div className={styles.vbddds}>
                 <Link to="/contact-us" className="btn125">
                     Contact Us
                 </Link>
@@ -52,7 +52,7 @@ export const Template21 =({ serviceResponse, slug }) => {
             </div>
         </div>
     
-        <div className="dbfghsdf col-lg-6">
+        <div className={`${styles.dbfghsdf} col-lg-6`}>
             {serviceResponse.data?.banner_image && (
                 <img
                 src={`${serviceResponse.image_url}/Templete_21/${serviceResponse.data.banner_image}`}
@@ -62,9 +62,9 @@ export const Template21 =({ serviceResponse, slug }) => {
         </div>
     </div>
     
-    <div className="fjhfdfgdfg">
+    <div className={styles.fjhfdfgdfg}>
         <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
                 <h2>{serviceResponse.data?.second_section_title &&
                   serviceResponse.data.second_section_title}</h2>
                 
@@ -79,12 +79,12 @@ export const Template21 =({ serviceResponse, slug }) => {
         </div>
     </div>
     <ServiceEnquiryForm loading={setLoading} slug={slug} />
-    <div className="dfbjhfdfgdf">
+    <div className={styles.dfbjhfdfgdf}>
         <div className="custom-container10">
-            <div className="vgbfdf">
+            <div className={styles.vgbfdf}>
                 <div className="row">
                     <div className="col-lg-7">
-                        <div className="fbgdfgdfgdf">
+                        <div className={styles.fbgdfgdfgdf}>
                             <h2>{serviceResponse.data?.third_section_title &&
                   serviceResponse.data.third_section_title}</h2>
                             
@@ -100,7 +100,7 @@ export const Template21 =({ serviceResponse, slug }) => {
                     </div>
                     
                     <div className="col-lg-5">
-                        <div className="dgndfgdfgdf">
+                        <div className={styles.dgndfgdfgdf}>
                             {serviceResponse.data?.third_section_image && (
                                 <img
                                 src={`${serviceResponse.image_url}/Templete_21/${serviceResponse.data.third_section_image}`}
@@ -115,9 +115,9 @@ export const Template21 =({ serviceResponse, slug }) => {
     </div>
     
         
-    <div className="fjhfdfgdfg">
+    <div className={styles.fjhfdfgdfg}>
         <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
                <div className="pt-4"
                     dangerouslySetInnerHTML={{
                     __html:
@@ -129,15 +129,15 @@ export const Template21 =({ serviceResponse, slug }) => {
         </div>
     </div>
     
-    <div className="zsdcvdfgfryhfre py-5">
+    <div className={`${styles.zsdcvdfgfryhfre} py-5`}>
         <div className="container-fluid px-5">
-            <div className="tab-container d-flex">
-                <div className="tab-menu me-4">
+            <div className={`${styles["tab-container"]} d-flex`}>
+                <div className={`${styles["tab-menu"]} me-4`}>
                     <ul> 
                         {tabs.map((tab) => (
                             <li key={tab.id}>
                             <div
-                                className={`tab-a ${activeTab === tab.id ? 'active-a' : ''}`}
+                                className={`${styles["tab-a"]} ${activeTab === tab.id ? styles["active-a"] : ''}`}
                                 data-id={tab.id}
                                 onClick={(e) => {
                                 e.preventDefault();
@@ -151,11 +151,11 @@ export const Template21 =({ serviceResponse, slug }) => {
                     </ul>
                 </div>
                 
-                <div className="jdneiuwrrrww_container">
+                <div className={styles.jdneiuwrrrww_container}>
                     {tabs.map((tab) => (
                     <div
                         key={tab.id}
-                        className={`tab ${activeTab === tab.id ? 'tab-active' : ''}`}
+                        className={`${styles.tab} ${activeTab === tab.id ? styles["tab-active"] : ''}`}
                         data-id={tab.id}>
                         <h2>{tab.heading}</h2>
                         <div
@@ -170,7 +170,7 @@ export const Template21 =({ serviceResponse, slug }) => {
         </div>
     </div>
     
-    <div className="xnjhxffgdf">
+    <div className={styles.xnjhxffgdf}>
         {serviceResponse.data?.featured_image && (
             <img
             src={`${serviceResponse.image_url}/Templete_21/${serviceResponse.data.featured_image}`}

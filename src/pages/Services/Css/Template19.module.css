@@ -1,6 +1,4 @@
-/*start new digital markeing design page  css*/
-
-.dbfghsdf img{
+ .dbfghsdf img{
     width: 100%;
     height: auto;
 }
@@ -9,130 +7,29 @@
   float: left;
   padding: 70px;
 }
-.sdfghdfgdf h1 {
-  color: #032D60;
+.sdfghdfgdf h1 { 
+  color: var(--main-blue-color);
   font-weight: bold;
 }
 .sdfghdfgdf p {
-  color: #181818;
-  font-size: 17px;
-  font-weight: 500; 
+  color: var(--medium-text-color);
 }
 
-.btn125 {
-  padding: 14px 40px;
-  background-color: #0176D3;
-  color: white;
-  font-size: 17px;
-  font-weight: 600;
-  border: 2px solid #0176D3;
-  border-radius: 4px;
+.dfgjhfgd {
+  display: flex;
+  padding: 1rem 0 3rem 0;
 }
 
-.btn126 {
-  padding: 14px 40px;
-  background-color: transparent;
-  color: #0176D3;
-  font-size: 17px;
-  font-weight: 600;
-  border: 2px solid #0176D3;
-  border-radius: 4px;
-  margin-left: 10px;
+.sdfsdfsdf h2 {
+  color: var(--main-blue-color);
 }
-
-.custom-container {
-  width: 70%;
-  margin: auto;
+.sdfsdfsdf p {
+  color: var(--medium-text-color);
 }
 
 .fjhfdfgdfg {
   width: 100%;
   padding: 40px 0;
-}
-
-.dfgjhfgd {
-  display: flex;
-  width: 100%;
-  height: 80vh;
-  align-items: center;
-  padding: 1rem 0 3rem 0;
-}
-
-.dfgjhfgd
-{
-  width: 100%;
-  height: 80vh;
-  background-size: 100% 100%;
-}
-
-.sdfsdfsdf h2 {
-  color: #032D60;
-  font-size: 40px;
-  font-weight: 600;
-}
-.sdfsdfsdf p {
-  color: #181818;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.dfhbfgd {
-  width: 100%;
-  height: 450px;
-}
-.dfhbfgd img {
-  width: 100%;
-  height: 100%;
-}
-
-.dfbnhdfdf h2 {
-  color: #032D60;
-  font-size: 40px;
-  font-weight: 600;
-}
-.dfbnhdfdf p {
-  color: #181818;
-  font-weight: 500;
-  font-size: 17px;
-}
-
-.fgjhdfg .form-control {
-  padding: 10px;
-  border: none !important;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
-
-.fgjhdfg {
-  margin-bottom: 20px;
-}
-
-.dfgbfdf button {
-  padding: 14px 35px;
-  color: white;
-  background-color: #0176D3;
-  border-radius: 4px;
-  border: none;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.inieuirjndsirferer.collapse {
-    justify-content: right;
-}
-
-.dfbghdfgdfgdf {
-  width: 100%;
-  padding: 40px 0;
-}
-
-.mgjhbdfg p {
-  padding-bottom: 10px;
-  color: #181818;
-}
-
-.mgjhbdfg a {
-  color: #0176D3;
-  font-weight: 500;
 }
 
 .dfbjhfdfgdf {
@@ -146,9 +43,12 @@
   border-radius: 1.4rem;
 }
 
-.custom-container10 {
-  width: 75%;
-  margin: auto;
+.dgndfgdfgdf {
+  width: 100%;
+}
+.dgndfgdfgdf img {
+  width: 100%;
+  height: auto;
 }
 
 .fbgdfgdfgdf h2 {
@@ -169,47 +69,62 @@
   border-radius: 4px;
 }
 
-.dgndfgdfgdf {
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*start  new off page seo  css*/
+/*start  new off page seo  css*/
+/*start  new off page seo  css*/
+.cffbvbhjfdbvdfvgvd {
   width: 100%;
-  height: 350px;
+  padding: 40px 0;
 }
-.dgndfgdfgdf img {
+
+.fkuyfdfrdgf {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.fkuyfdfrdgf h2 {
+  color: #032D60;
+  font-size: 40px; 
+  font-weight: 600;
+}
+
+.ujhfgfg {
+  width: 60px;
+  height: 60px;
+}
+.ujhfgfg img {
   width: 100%;
   height: 100%;
 }
 
-.fdnbvgdfgdfgdf {
-  margin-top: 40px;
-}
-
-.cfbvhdfgdf {
-  width: 70%;
-  margin: auto;
-}
-.cfbvhdfgdf h2 {
+.fdbvhjfyfdg h6 {
+  font-size: 25px;
+  font-weight: 600;
   color: #032D60;
-  font-weight: bold;
-  font-size: 40px;
-}
-.cfbvhdfgdf p {
-  color: #181818;
-  font-size: 17px;
 }
 
-.xnjhxffgdf {
-  width: 100%;
-}
-.xnjhxffgdf img {
-  width: 100%;
+.fvbnjfdvfdgfd {
+  margin-top: 60px;
 }
 
-/*end new digital markeing design page  css*/
+.fhvgfdfd {
+  padding: 35px 15px;
+  border-radius: 8px;
+  margin-bottom: 35px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
 
 
 
-/*start affordable seo css*/
-/*start affordable seo css*/
-/*start affordable seo css*/
 .gjhfgfgdfg {
   width: 100%;
   padding: 40px 0;
@@ -253,6 +168,7 @@
 .gdfhgdfg i {
   text-align: center;
   color: white;
+  padding-top:18px;
 }
 
 .ggdfgdfg {
@@ -321,6 +237,7 @@
   font-size: 24px;
 }
 .gdfhbgdfgdfg button {
+  font-size: 12px;
   font-weight: 600;
   color: #032D60;
   text-decoration: underline;
@@ -355,30 +272,8 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.gdfhbgdfgdfg h4 {
-  padding-top: 25px;
-  font-size: 24px;
-  color: #032D60 !important;
-  font-weight: 600;
-}
-
-.sdmsdjhsds img {
-  width: 100%;
-  height: auto;
-}
-
-.ijdnm_eoijrer{
-    border-radius: 1rem;
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-}
-
-.dopjemwlkjrower_inner h2,
-.ijdnm_eoijrer h2{
-    color: var(--main-blue-color);
-}
-
-/*end affordable seo css*/
-/*end affordable seo css*/
+/*end  new off page seo  css*/
+/*end  new off page seo  css*/
 
 
 

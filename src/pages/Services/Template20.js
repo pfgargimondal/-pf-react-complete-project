@@ -1,4 +1,4 @@
-import "./Css/Template20.css";
+import styles from "./Css/Template20.module.css";
 import { useState } from "react";
 import ServiceEnquiryForm from "./FormComponent/ServiceEnquiryForm";
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 export const Template20 =({ serviceResponse, slug }) =>{
     const [loading, setLoading] = useState(false);
   return (
-    <div>
+    <div> 
         {loading && <Loader />}
         <main>
             <div className="dfgjhfgd">

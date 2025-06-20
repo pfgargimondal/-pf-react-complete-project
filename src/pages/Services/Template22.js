@@ -1,4 +1,4 @@
-import "./Css/Template22.css";
+import styles from "./Css/Template22.module.css";
 import { useState } from "react";
 import ServiceEnquiryForm from "./FormComponent/ServiceEnquiryForm";
 import { Link } from "react-router-dom";
@@ -12,15 +12,15 @@ export const Template22 =({ serviceResponse, slug })=> {
     <div>
         {loading && <Loader />}
       <main>
-    <div className="dfgjhfgd" style={{background : "url(./images/afros.png)"}}>
-        <div className="sdfghdfgdf col-lg-6">
+    <div className={styles.dfgjhfgd} style={{background : "url(./images/afros.png)"}}>
+        <div className={`${styles.sdfghdfgdf} col-lg-6`}>
             <h1 className="mt-0 mb-0">{serviceResponse.data?.banner_title &&
                 serviceResponse.data.banner_title}</h1>
             
             <p className="mt-3 mb-5">{serviceResponse.data?.banner_description &&
                 serviceResponse.data.banner_description}</p>
               
-              <div className="vbddds">
+              <div className={styles.vbddds}>
                 <Link to="/contact-us" className="btn125">
                     Contact Us
                 </Link>
@@ -28,7 +28,7 @@ export const Template22 =({ serviceResponse, slug })=> {
               </div>
         </div>
         
-        <div className="dbfghsdf col-lg-6">
+        <div className={`${styles.dbfghsdf} col-lg-6`}>
             {serviceResponse.data?.banner_image && (
                 <img
                 src={`${serviceResponse.image_url}/Templete_22/${serviceResponse.data.banner_image}`}
@@ -40,9 +40,9 @@ export const Template22 =({ serviceResponse, slug })=> {
 
 
 
-    <div className="fjhfdfgdfg">
+    <div className={styles.fjhfdfgdfg}>
         <div className="custom-container">
-            <div className="sdfsdfsdf">
+            <div className={styles.sdfsdfsdf}>
                 <h2>{serviceResponse.data?.second_section_title &&
                   serviceResponse.data.second_section_title}</h2>
 
@@ -59,9 +59,9 @@ export const Template22 =({ serviceResponse, slug })=> {
 
     <ServiceEnquiryForm loading={setLoading} slug={slug} />
 
-    <div className="dfbghdfgdfgdf">
+    <div className={styles.dfbghdfgdfgdf}>
         <div className="custom-container">
-            <div className="mgjhbdfg">
+            <div className={styles.mgjhbdfg}>
                 <h2>{serviceResponse.data?.third_section_title &&
                   serviceResponse.data.third_section_title}</h2>
                 <div
@@ -75,17 +75,17 @@ export const Template22 =({ serviceResponse, slug })=> {
         </div>
     </div>
 
-    <div className="iudniuwehirwerr py-5">
+    <div className={`${styles.iudniuwehirwerr} py-5`}>
         <div className="container-fluid px-5">
             <div className="row align-items-center">
                 <div className="col-lg-8 mb-5">
-                    <div className="oidenjwiuhrr_inner" style={{
+                    <div className={styles.oidenjwiuhrr_inner} style={{
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     backgroundImage: 'url(/images/16359095_v904-nunny-012.jpg)', // If image is in public folder
   }}>
-                        <div className="djnhweber_inner_overlay p-5">
+                        <div className={`${styles.djnhweber_inner_overlay} p-5`}>
                             <h4>{serviceResponse.data?.fourth_section_title &&
                   serviceResponse.data.fourth_section_title}</h4>
 
@@ -102,7 +102,7 @@ export const Template22 =({ serviceResponse, slug })=> {
                 </div>
                 
                 <div className="col-lg-4 mb-5">
-                    <div className="oidenjwiuhrr_inner">
+                    <div className={styles.oidenjwiuhrr_inner}>
                         {serviceResponse.data?.fourth_section_image && (
                             <img
                             src={`${serviceResponse.image_url}/Templete_22/${serviceResponse.data.fourth_section_image}`}
@@ -113,7 +113,7 @@ export const Template22 =({ serviceResponse, slug })=> {
                 </div>
                 
                 <div className="col-lg-4 mb-5">
-                    <div className="oidenjwiuhrr_inner">
+                    <div className={styles.oidenjwiuhrr_inner}>
                         {serviceResponse.data?.fifth_section_image && (
                             <img
                             src={`${serviceResponse.image_url}/Templete_22/${serviceResponse.data.fifth_section_image}`}
@@ -124,13 +124,13 @@ export const Template22 =({ serviceResponse, slug })=> {
                 </div>
                 
                 <div className="col-lg-8">
-                    <div className="oidenjwiuhrr_inner" style={{
+                    <div className={styles.oidenjwiuhrr_inner} style={{
                             backgroundRepeat: 'no-repeat',
                             backgroundSize: 'cover',
                             backgroundPosition: 'center center',
                             backgroundImage: 'url(/images/14547742_rm218batch4-ning-34.jpg)', // If image is in public folder
                         }}>
-                        <div className="djnhweber_inner_overlay p-5">
+                        <div className={`${styles.djnhweber_inner_overlay} p-5`}>
                             <h4>{serviceResponse.data?.fifth_section_title &&
                   serviceResponse.data.fifth_section_title}</h4>
                         
