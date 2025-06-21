@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import http from "./http";
 import './assets/css/style.css';
 import './assets/css/headerresponsive.css';
+import ScrollToTop from "./hooks/ScrollToTop"; // adjust path as needed
 
 function App() {
   const [CategoryDetails, setcategoryDetails] = useState({
@@ -25,6 +26,7 @@ function App() {
     }, []);
   return (
     <div className="App">
+      <ScrollToTop />
       <Header CategoryDetails={CategoryDetails}/>  
       <div className="middle-wrapper">
         <AllRoutes/></div>      
