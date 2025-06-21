@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import http from "../../http";
 import { FAQ } from "./components/FAQ";
 import "./homepagestyle.css";
 import "./homepageresponsive.css";
