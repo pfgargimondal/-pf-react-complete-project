@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const ServicesDropdownMenu = ({ CategoryDetails = [] }) => {
@@ -19,7 +19,8 @@ const ServicesDropdownMenu = ({ CategoryDetails = [] }) => {
         aria-expanded={isOpen}
       >
         <NavLink to="/services">
-          <i className="fa fa-handshake-o" /> Services
+          <i className="fa fa-handshake" /> Services
+          <b className="caret"></b>
         </NavLink>
       </button>
 

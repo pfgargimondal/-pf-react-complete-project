@@ -3,13 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import http from "../../http";
 import { FAQ } from "./components/FAQ";
-
 import "./homepagestyle.css";
 import "./homepageresponsive.css";
 import "swiper/css";
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css/autoplay';
 import { useTitle } from "../../hooks/useTitle";
+import Loader from "../../component/Loader/Loader";
 
 export const Home = () => {
   const elementOneRef = useRef(null);
@@ -59,7 +61,6 @@ export const Home = () => {
   }, [handleScroll]); // ✅ add handleScroll here
 
   const [timeLeft, setTimeLeft] = useState({});
-  // const [expired, setExpired] = useState(false);
 
   const targetDate = "2025-08-28T23:59:59";
 
@@ -129,6 +130,28 @@ export const Home = () => {
   ];
 
   //
+  const [loading, setLoading] = useState(true);
+  const [HomePageDetails, setHomePageDetails] = useState({});
+  useEffect(() => {
+    const fetchHomePageData = async () => {
+      setLoading(true);
+        try {
+        const getresponse = await http.get(`${process.env.REACT_APP_HomeAPI}`);
+        setHomePageDetails(getresponse.data.data);
+
+        } catch (error) {
+            console.error("Error fetching users:", error);
+        } finally{
+            setLoading(false);
+        }
+    }; 
+
+    fetchHomePageData();
+    }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   const faqs = [
     {
@@ -416,7 +439,7 @@ export const Home = () => {
       </div>
       {/*banner end*/}
       {/*middle start*/}
-      <main>
+      {/* <main> */}
         <div className="home-section-1 pb-5">
           <div className="container">
             <div className="row">
@@ -1189,6 +1212,7 @@ export const Home = () => {
             <div className="sliderdsfrr">
               <div className="swiper people__slide">
                 <Swiper
+                  modules={[Autoplay]}
                   spaceBetween={30}
                   slidesPerView="auto"
                   grabCursor={true}
@@ -1231,7 +1255,7 @@ export const Home = () => {
         </div>
 
         <FAQ faqs={faqs} />
-      </main>
+      {/* </main> */}
       {/*middle end*/}
       <div className="over-white-layer position-fixed bg-white" />
     </div>

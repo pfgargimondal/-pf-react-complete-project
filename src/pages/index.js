@@ -10,7 +10,7 @@ export { WebDevelopment } from "./Services/WebDevelopment";
 export { WebDesign } from "./Services/WebDesign";
 
 
-
+export { Blog } from "./Blog/Blog";
 
 
 export { PageNotFound } from "./PageNotFound/PageNotFound";

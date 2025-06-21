@@ -1,11 +1,10 @@
-
 import { Header, Footer } from "./component/index";
 import { AllRoutes } from "./routes/AllRoutes";
 import { useEffect, useState } from "react";
 import http from "./http";
 import './assets/css/style.css';
 import './assets/css/headerresponsive.css';
-import ScrollToTop from "./hooks/ScrollToTop"; // adjust path as needed
+import ScrollToTop from "./hooks/ScrollToTop";
 
 function App() {
   const [CategoryDetails, setcategoryDetails] = useState({
@@ -14,13 +13,13 @@ function App() {
    useEffect(() => {
     const fetchData = async () => {
         try {
-        const getresponse = await http.get("/get-service-category");
+        const getresponse = await http.get(`${process.env.REACT_APP_CATEGORYFETCH}`);
         setcategoryDetails(getresponse.data.data);
 
         } catch (error) {
             console.error("Error fetching users:", error);
         }
-    };
+    }; 
 
     fetchData();
     }, []);

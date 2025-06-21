@@ -344,7 +344,7 @@ export const Header = ({CategoryDetails}) => {
                                             to="/business-register"
                                         >
                                             <i
-                                                className="fa fa-pencil-square-o"
+                                                className="fa fa-pencil-square"
                                                 aria-hidden="true"
                                             />{" "}
                                             Business Register
@@ -362,7 +362,7 @@ export const Header = ({CategoryDetails}) => {
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/blogs">
                                             <i
-                                                className="fa fa-file-text-o"
+                                                className="fa fa-file-text"
                                                 aria-hidden="true"
                                             />{" "}
                                             Blog
@@ -428,11 +428,11 @@ export const Header = ({CategoryDetails}) => {
                                 <li className="nav-item">
                                     <NavLink
                                         className="nav-link"
-                                        to="/business-register"
+                                        to="/business-register" style={{ display: "inline-flex" }}
                                     >
                                         <i
-                                            className="fa fa-pencil-square-o"
-                                            aria-hidden="true"
+                                            className="fa fa-pencil-square"
+                                            aria-hidden="true"  style={{ margin: "2px" }}
                                         />{" "}
                                         Business Register
                                     </NavLink>
@@ -449,7 +449,7 @@ export const Header = ({CategoryDetails}) => {
                                 <li className="nav-item">
                                     <NavLink className="nav-link" to="/blogs">
                                         <i
-                                            className="fa fa-file-text-o"
+                                            className="fa fa-file-text"
                                             aria-hidden="true"
                                         />{" "}
                                         Blog

@@ -197,7 +197,7 @@
     }
     
     .home_page_banner .iuhduiewrewr_right form {
-        width: 100%;
+        width: 95%;
         z-index: 999;
     }
     
@@ -211,6 +211,10 @@
     
     .svtgegherewvfhfgh .slidersfvdf {
         height: 60vh;
+    }
+
+    .home_page_banner .iuhduiewrewr_right form .bnnr-frm-main .form-group {
+        width:  400px;
     }
 }
 

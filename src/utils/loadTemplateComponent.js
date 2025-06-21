@@ -4,6 +4,7 @@ import {Template3} from "../pages/Services/Template3";
 import {Template4} from "../pages/Services/Template4";
 import {Template5} from "../pages/Services/Template5";
 import {Template6} from "../pages/Services/Template6";
+import {Template7} from "../pages/Services/Template7";
 import {Template8} from "../pages/Services/Template8";
 import {Template9} from "../pages/Services/Template9";
 import {Template10} from "../pages/Services/Template10";
@@ -39,10 +40,6 @@ import {Template39} from "../pages/Services/Template39";
 import {Template40} from "../pages/Services/Template40";
 import {Template41} from "../pages/Services/Template41";
 import {Template42} from "../pages/Services/Template42";
-
-
-
-import {Template7} from "../pages/Services/Template7";
 import {Template43} from "../pages/Services/Template43";
 import {Template44} from "../pages/Services/Template44";
 import {Template45} from "../pages/Services/Template45";

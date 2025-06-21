@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom/dist";
-import { Home, Contactus, Aboutus, Careers, OurPortfolio, BusinessRegister, Services, WebDevelopment, WebDesign, PageNotFound } from "../pages/index";
+import { Home, Contactus, Aboutus, Careers, OurPortfolio, BusinessRegister, Services, Blog, WebDevelopment, WebDesign, PageNotFound } from "../pages/index";
 import {DynamicPageRouter} from './DynamicPageRouter';
 
 export const AllRoutes = () => {
@@ -18,7 +18,7 @@ export const AllRoutes = () => {
 
 
         <Route path="/:slug"  element={<DynamicPageRouter/>} />
-
+        <Route path="/blogs" element={<Blog />} />
 
 
         <Route path="*" element={<PageNotFound />} />     

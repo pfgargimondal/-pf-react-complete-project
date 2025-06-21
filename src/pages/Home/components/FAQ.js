@@ -22,7 +22,7 @@ export const FAQ = ({faqs}) => {
                         believe in collaboration to make brands grow.
                     </p>
                 </div>
-
+ 
                 <div className="dienhwerjjr">
                     <div className="accordion row">
                         {faqs.map((faq) => (
