@@ -13,7 +13,7 @@ function App() {
    useEffect(() => {
     const fetchData = async () => {
         try {
-        const getresponse = await http.get(`${process.env.REACT_APP_CATEGORYFETCH}`);
+        const getresponse = await http.get("/get-service-category");
         setcategoryDetails(getresponse.data.data);
 
         } catch (error) {
