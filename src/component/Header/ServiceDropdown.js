@@ -29,7 +29,6 @@ const ServicesDropdownMenu = ({ CategoryDetails = [] }) => {
           className="dropdown-menu ifjsff__dpdn show bg-white ps-0"
           aria-labelledby="dropdownMenuButton"
         >
-   
           {CategoryDetails.map((category, index) => (
             <li
               key={category.id}
@@ -94,8 +93,8 @@ const ServicesDropdownMenu = ({ CategoryDetails = [] }) => {
                 </div>
               )}
             </li>
-              ))}
-  
+          ))}
+
         </ul>
       )}
     </div>
