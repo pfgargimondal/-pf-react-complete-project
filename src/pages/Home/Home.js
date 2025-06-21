@@ -11,7 +11,6 @@ import "swiper/css";
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css/autoplay';
 import { useTitle } from "../../hooks/useTitle";
-import Loader from "../../component/Loader/Loader";
 
 export const Home = () => {
   const elementOneRef = useRef(null);
@@ -129,29 +128,6 @@ export const Home = () => {
     },
   ];
 
-  //
-  const [loading, setLoading] = useState(true);
-  const [HomePageDetails, setHomePageDetails] = useState({});
-  useEffect(() => {
-    const fetchHomePageData = async () => {
-      setLoading(true);
-        try {
-        const getresponse = await http.get(`${process.env.REACT_APP_HomeAPI}`);
-        setHomePageDetails(getresponse.data.data);
-
-        } catch (error) {
-            console.error("Error fetching users:", error);
-        } finally{
-            setLoading(false);
-        }
-    }; 
-
-    fetchHomePageData();
-    }, []);
-
-  if (loading) {
-    return <Loader />;
-  }
 
   const faqs = [
     {
