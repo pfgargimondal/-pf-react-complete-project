@@ -2,8 +2,9 @@ import styles from "./BlogDetails.module.css";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import http from "../../http";
-import Loader from "../../component/Loader/Loader";
 import { Link } from 'react-router-dom';
+import Loader from "../../component/Loader/Loader";
+
 
 export const BlogDetails = () => {
   const { slug } = useParams();
