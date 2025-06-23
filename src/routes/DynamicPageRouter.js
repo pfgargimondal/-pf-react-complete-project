@@ -14,7 +14,7 @@ export const DynamicPageRouter = () => {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
-
+ 
       try {
         const res = await http.get(`${process.env.REACT_APP_API}${slug}`);
         const response = res.data;
