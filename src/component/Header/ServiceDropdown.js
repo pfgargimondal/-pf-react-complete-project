@@ -29,7 +29,8 @@ const ServicesDropdownMenu = ({ CategoryDetails = [] }) => {
           className="dropdown-menu ifjsff__dpdn show bg-white ps-0"
           aria-labelledby="dropdownMenuButton"
         >
-          {CategoryDetails.map((category, index) => (
+          {CategoryDetails && CategoryDetails.length > 0 ? (
+            CategoryDetails.map((category, index) => (
             <li
               key={category.id}
               onMouseEnter={() => setSubmenuIndex(index)}
@@ -93,12 +94,20 @@ const ServicesDropdownMenu = ({ CategoryDetails = [] }) => {
                 </div>
               )}
             </li>
-          ))}
+          ))
+          ) : (
 
+            <div className="d-flex ishdifhiddd align-items-center">
+              <NavLink className="dropdown-item">
+                No categories available
+              </NavLink>
+            </div>
+          )}
         </ul>
       )}
     </div>
   );
 };
+
 
 export default ServicesDropdownMenu;
