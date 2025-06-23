@@ -11,6 +11,7 @@ export { WebDesign } from "./Services/WebDesign";
 
 
 export { Blog } from "./Blog/Blog";
+export { BlogDetails } from "./Blog/BlogDetails";
 
 
 export { PageNotFound } from "./PageNotFound/PageNotFound";

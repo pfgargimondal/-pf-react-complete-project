@@ -36,10 +36,13 @@ export const FAQ = ({faqs}) => {
                                         <span className="accordion-title">{faq.question}</span>
                                         <span className="icon" aria-hidden="true" />
                                     </button>
-
                                     {activeFaqId === faq.id && (
                                         <div className="accordion-content">
-                                            <p>{faq.answer}</p>
+                                            <div
+                                                dangerouslySetInnerHTML={{
+                                                    __html: faq?.answer && (faq.answer),
+                                                }}
+                                            />
                                         </div>
                                     )}
                                 </div>

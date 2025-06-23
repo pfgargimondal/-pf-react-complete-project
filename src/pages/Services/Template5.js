@@ -169,7 +169,7 @@ export const Template5 = ({ serviceResponse, slug }) => {
                         </div>
                     </div>
                 </div>
-                <div class="sdmsdjhsds">
+                <div class={styles.sdmsdjhsds}>
                     {serviceResponse.data?.featured_image && (
                         <img
                             src={`${serviceResponse.image_url}/Template_5/${serviceResponse.data.featured_image}`}

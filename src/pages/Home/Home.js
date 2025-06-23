@@ -1,20 +1,20 @@
 import { useEffect, useRef, useState, useCallback } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FAQ } from "./components/FAQ";
 import "./homepagestyle.css";
 import "./homepageresponsive.css";
-import "swiper/css";
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css/autoplay';
 import { useTitle } from "../../hooks/useTitle";
+import http from "../../http";
+import Loader from "../../component/Loader/Loader";
+import { Testimonial } from "./components/Testimonial";
 
 export const Home = () => {
   const elementOneRef = useRef(null);
   const elementTwoRef = useRef(null);
   const elementThreeRef = useRef(null);
+  const [loading, setLoading] = useState(true);
 
   useTitle("Home");
 
@@ -89,108 +89,27 @@ export const Home = () => {
     return () => clearInterval(interval);
   }, [targetDate]);
 
-  const ourClients = [
-    {
-      name: "Drew Houston",
-      position: "Co-founder and CEO",
-      image:
-        "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      name: "Melanis Collins",
-      position: "VP of People",
-      image:
-        "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      name: "Melanis Collins",
-      position: "VP of People",
-      image:
-        "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      name: "Melanis Collins",
-      position: "VP of People",
-      image:
-        "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      name: "Melanis Collins",
-      position: "VP of People",
-      image:
-        "https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-  ];
+  const [HomePageDetails, setHomePageDetails] = useState({});
+  useEffect(() => {
+    const fetchHomePageData = async () => {
+      setLoading(true);
+        try {
+        const getresponse = await http.get(`${process.env.REACT_APP_HOMEAPI}`);
+        setHomePageDetails(getresponse.data);
 
+        } catch (error) {
+            console.error("Error fetching users:", error);
+        } finally{
+            setLoading(false);
+        }
+    }; 
 
-  const faqs = [
-    {
-      id: 1,
-      question: "What services does Passionate Futurist provide?",
-      answer:
-        "Among the services we offer are workshops, scenario planning, innovation consulting, trend analysis, strategic foresight, and future- readiness assessments.We assist firms in anticipating future issues and provide them with the information and tactics they need to prosper in a constantly changing environment.",
-    },
-    {
-      id: 2,
-      question: "How can Passionate Futurist help my business?",
-      answer:
-        "By identifying emerging trends, technological advancements, and shifting societal issues, our services help your business stay competitive. We collaborate with you to build innovation pipelines, formulate strategies that are ready for the future, and make sure your company can keep up with the quick changes.",
-    },
-    {
-      id: 3,
-      question: "How do I get started with your services?",
-      answer:
-        "It is simple to get started! Just schedule a free consultation or get in touch with us via our website. To assist you in being ready for the future, we will evaluate your needs, talk with you about your objectives, and suggest the best services.",
-    },
-    {
-      id: 4,
-      question: "Do you offer workshops or training for teams?",
-      answer:
-        "Indeed! We provide specialized training sessions and workshops that are intended to provide your teams the abilities and attitude required to successfully innovate and adapt to change. Our active approach helps your company develop a culture that is prepared for the future.",
-    },
-    {
-      id: 5,
-      question:
-        "What digital marketing services does Passionate Futurist offer?",
-      answer:
-        "Search engine optimization (SEO), pay-per-click (PPC), social media marketing, content marketing, email marketing, conversion rate optimization, and digital strategy consulting are just a few of the many digital marketing services that Passionate Futurist provides. We assist companies in establishing a powerful web presence and obtaining quantifiable outcomes.",
-    },
-    {
-      id: 6,
-      question: "Who can benefit from your services?",
-      answer:
-        "Our services are ideal for businesses, entrepreneurs, and organizations looking to future-proof their operations, explore emerging trends, or integrate sustainable practices into their models.",
-    },
-    {
-      id: 7,
-      question: "Do you offer content writing services?",
-      answer:
-        "Yes, we create SEO-optimized and engaging content for websites, blogs, and social media to help you boost your website with relevant keywords.",
-    },
-    {
-      id: 8,
-      question: "What are the cost of your services?",
-      answer:
-        "We offer customized pricing model depending on the scope of work and business needs of the specific project.",
-    },
-    {
-      id: 9,
-      question: "With which industries do you work with?",
-      answer:
-        "We offer our services to diverse industries like e-commerce, real estate, healthcare, education, and more.",
-    },
-    {
-      id: 10,
-      question: "How can I get a quote for your services?",
-      answer:
-        "To submit your quote , visit our website directly to avail our services, or you can contact us via our website, email, and call us, and we’ll provide you customized quote based on your demands.",
-    },
-  ];
+    fetchHomePageData();
+    }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   const sliderSettings = {
     autoplay: true,
@@ -1172,64 +1091,9 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="home-review-section py-5">
-          <div className="dfvghhgfdvggyre container text-center pb-5">
-            <span>Full Service Digital Agency</span>
-            <h2 className="mt-2">
-              Our <span>Clients</span>
-            </h2>
-            <p>
-              Our clients are not just clients, they are out partners. We truly{" "}
-              <br /> believe in collaboration to make brands grow.
-            </p>
-          </div>
-          <div className="portfolio-slider">
-            <div className="sliderdsfrr">
-              <div className="swiper people__slide">
-                <Swiper
-                  modules={[Autoplay]}
-                  spaceBetween={30}
-                  slidesPerView="auto"
-                  grabCursor={true}
-                  centeredSlides={false}
-                  loop={false}
-                  autoplay={false}
-                >
-                  {ourClients.map((ourClient, idx) => (
-                    <SwiperSlide key={idx}>
-                      <div className="people__card">
-                        <div className="people__info">
-                          <ul className="people__social">
-                            <li>
-                              <a href="/">
-                                <i className="fa-solid fa-globe" />
-                              </a>
-                            </li>
-                          </ul>
-                          <h3 className="people__name d-flex align-items-center">
-                            <div className="people__image">
-                              <img src={ourClient.image} alt={ourClient.name} />
-                            </div>
-                            {ourClient.name}
-                          </h3>
-                          <p className="people__position">
-                            {ourClient.position}
-                          </p>
-                          <p className="people__desc">{ourClient.desc}</p>
-                        </div>
-                        <div className="people__btn">
-                          <a href="/">Contact Us</a>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Testimonial ourClients={HomePageDetails.data.Testimonials}  imageUrl={HomePageDetails.image_url}/>
 
-        <FAQ faqs={faqs} />
+        <FAQ faqs={HomePageDetails.data.Faqs} />
       {/* </main> */}
       {/*middle end*/}
       <div className="over-white-layer position-fixed bg-white" />

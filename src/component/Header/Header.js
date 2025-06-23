@@ -17,7 +17,7 @@ export const Header = ({CategoryDetails}) => {
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, []); 
 
     const handleResMenu = () => {        
         setResMenuActive(!resMenuActive);        
@@ -71,7 +71,7 @@ export const Header = ({CategoryDetails}) => {
                                         >
                                             {" "}
                                             <img
-                                                src={"./images/twitter1.webp"}
+                                                src={"/images/twitter1.webp"}
                                                 alt="twitter logo"
                                             />{" "}
                                         </a>
@@ -85,7 +85,7 @@ export const Header = ({CategoryDetails}) => {
                                             {" "}
                                             <img
                                                 src={
-                                                    "./images/linkedin (2).webp"
+                                                    "/images/linkedin (2).webp"
                                                 }
                                                 alt="linkedin logo"
                                             />
@@ -99,7 +99,7 @@ export const Header = ({CategoryDetails}) => {
                                             {" "}
                                             <img
                                                 src={
-                                                    "./images/facebook (4).webp"
+                                                    "/images/facebook (4).webp"
                                                 }
                                                 alt="facebook logo"
                                             />{" "}
@@ -112,7 +112,7 @@ export const Header = ({CategoryDetails}) => {
                                         >
                                             <img
                                                 src={
-                                                    "./images/youtube (1).webp"
+                                                    "/images/youtube (1).webp"
                                                 }
                                                 alt="youtube logo"
                                             />
@@ -125,7 +125,7 @@ export const Header = ({CategoryDetails}) => {
 
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
                         <Link className="navbar-brand" to="/">
-                            <img src={"./images/pf logo.webp"}
+                            <img src={"/images/pf logo.webp"}
                                 alt="passionate futurist logo"
                             />
                         </Link>
