@@ -6,12 +6,12 @@ import http from "../../../http";
 export const EnquiryForm = ({loading, serviceCategory}) => {
 
     const [inputs, setInputs] = useState({
-    name: "",
-    phone_number: "",
-    email: "",
-    service_category: "",
-    message: "",
-  });
+        name: "",
+        phone_number: "",
+        email: "",
+        service_category: "",
+        message: "",
+    });
 
   const [errors, setErrors] = useState({});
 
@@ -69,7 +69,7 @@ export const EnquiryForm = ({loading, serviceCategory}) => {
     loading(true); // loader ON
 
     try {
-      const response = await http.post("/add-services-enquiry", inputs);
+      const response = await http.post("/add-home-page-enquiry", inputs);
       if (response.data.success) {
         toast.success(response.data.message, {
           style: {
@@ -95,7 +95,7 @@ export const EnquiryForm = ({loading, serviceCategory}) => {
 
   return (
     <div>
-      <form className="position-relative bg-white" id="cstm-mdal-frm">
+      <form className="position-relative bg-white" id="cstm-mdal-frm" onSubmit={submitForm} noValidate>
         <div className="dojmlkjrer">
           <div className="bnnr-frm-start d-flex align-items-center p-3">
             <img src="./images/pf logo.png" className="me-3" alt="" />
@@ -170,7 +170,7 @@ export const EnquiryForm = ({loading, serviceCategory}) => {
                 </p>
               </div>
               <div className="duweruihewrewr">
-                <button type="button" className="btn btn-custm-bttn py-2" onClick={submitForm}>
+                <button className="btn btn-custm-bttn py-2" type="submit">
                   Submit <i className="fa-regular ms-1 fa-paper-plane" />
                 </button>
               </div>
