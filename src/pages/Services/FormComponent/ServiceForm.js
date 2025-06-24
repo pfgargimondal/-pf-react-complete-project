@@ -16,7 +16,7 @@ const ServiceForm = ({ loading, slug}) => {
   
     const submitForm = async (e) => {
       e.preventDefault();
-      const validationErrors = validateInputs(inputs);
+      const validationErrors = validateInputs(inputs); 
   
       if (Object.keys(validationErrors).length > 0) {
         setErrors(validationErrors);

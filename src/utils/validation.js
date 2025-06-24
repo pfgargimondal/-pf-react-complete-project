@@ -20,7 +20,14 @@ export const validateInputs = (inputs) => {
     newErrors.email = "Enter a valid email address";
   }
 
-  if (!inputs.website_url.trim()) newErrors.website_url = "Website URL is required";
+  if (!inputs.website_url.trim()) {
+    newErrors.website_url = "Website URL is required";
+  } else if (
+    !/^(https?:\/\/)?([\w\-]+\.)+[\w\-]{2,}(\/[^\s]*)?$/.test(inputs.website_url.trim())
+  ) {
+    newErrors.website_url = "Please enter a valid website URL (e.g. https://example.com)";
+  }
+
   if (!inputs.message.trim()) newErrors.message = "Message is required";
 
   return newErrors;

@@ -2,10 +2,11 @@ import { Routes, Route } from "react-router-dom/dist";
 import { Home, Contactus, Aboutus, Careers, OurPortfolio, BusinessRegister, Services, Blog, BlogDetails, WebDevelopment, WebDesign, PageNotFound } from "../pages/index";
 import {DynamicPageRouter} from './DynamicPageRouter';
 
-export const AllRoutes = () => {
+export const AllRoutes = ({CategoryDetails}) => {
   return (
     <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home state = {CategoryDetails }/>}   />
+
         <Route path="/about-us" element={<Aboutus />} />
         <Route path="/contact-us" element={<Contactus />} />
         <Route path="/careers" element={<Careers />} />

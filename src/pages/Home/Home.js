@@ -9,8 +9,10 @@ import { useTitle } from "../../hooks/useTitle";
 import http from "../../http";
 import Loader from "../../component/Loader/Loader";
 import { Testimonial } from "./components/Testimonial";
+import { EnquiryForm } from "./components/EnquiryForm";
 
-export const Home = () => {
+export const Home = ({state}) => {
+
   const elementOneRef = useRef(null);
   const elementTwoRef = useRef(null);
   const elementThreeRef = useRef(null);
@@ -222,90 +224,7 @@ export const Home = () => {
                   data-aos="zoom-in"
                   data-aos-duration={1500}
                 >
-                  <form
-                    action=""
-                    className="position-relative bg-white"
-                    id="cstm-mdal-frm"
-                  >
-                    <div className="dojmlkjrer">
-                      <div className="bnnr-frm-start d-flex align-items-center p-3">
-                        <img
-                          src="./images/pf logo.png"
-                          className="me-3"
-                          alt=""
-                        />
-                        <h5>PF AI Form</h5>
-                      </div>
-                      <div className="bnnr-frm-main p-3">
-                        <div className="form-group">
-                          <div className="position-relative mb-3">
-                            <input
-                              type="text"
-                              className="form-control"
-                              required=""
-                            />
-                            <label className="form-label">
-                              <i className="bi me-1 bi-person-circle" /> Full
-                              Name
-                            </label>
-                          </div>
-                          <div className="position-relative mb-3">
-                            <input
-                              type="text"
-                              className="form-control"
-                              required=""
-                            />
-                            <label className="form-label">
-                              <i className="bi me-1 bi-envelope" /> Email
-                            </label>
-                          </div>
-                          <div className="position-relative mb-3">
-                            <input
-                              type="text"
-                              className="form-control"
-                              required=""
-                            />
-                            <label className="form-label">
-                              <i className="bi me-1 bi-phone" /> Phone No.
-                            </label>
-                          </div>
-                          <div className="dfdrserfrstretr tposition-relative mb-3">
-                            <label className="form-label position-relative mb-3">
-                              <i className="bi me-1 bi-backpack" /> Enquiry For
-                            </label>
-                            <select
-                              className="form-select"
-                              aria-label="Default select example"
-                            >
-                              <option selected="">Open this select menu</option>
-                              <option value={1}>One</option>
-                              <option value={2}>Two</option>
-                              <option value={3}>Three</option>
-                            </select>
-                          </div>
-                          <div className="position-relative my-4">
-                            <textarea
-                              type="text"
-                              className="form-control"
-                              required=""
-                              defaultValue={""}
-                            />
-                            <label className="form-label">
-                              <i className="bi me-1 bi-chat-left-text" />{" "}
-                              Message
-                            </label>
-                          </div>
-                          <div className="duweruihewrewr">
-                            <button className="btn btn-custm-bttn py-2">
-                              Submit{" "}
-                              <i className="fa-regular ms-1 fa-paper-plane" />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="bnnr-frm-end" />
-                    </div>
-                  </form>
+                  <EnquiryForm loading={setLoading} serviceCategory={state}/>
                   <div className="border-blur" />
                 </div>
                 <div className="duhweurw uinkhwerwer position-absolute bg-white p-2">

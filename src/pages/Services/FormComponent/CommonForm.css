@@ -1,0 +1,204 @@
+/*common form start*/
+.common-form-wrapper .c-f-1 {
+  position: fixed;
+  width: 60%;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 150%);
+  border-radius: 10px 10px 0 0;
+  z-index: 99999999;
+  transition: 0.5s ease-in-out;
+}
+.common-form-wrapper .c-f-1.cf-show {
+  transform: translate(-50%, 0);
+  transition: 0.5s ease-in-out;
+}
+.common-form-wrapper.p-4.c-f-1-expand {
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.common-form-wrapper .fa-xmark {
+  cursor: pointer;
+  color: #777777;
+}
+.common-form-wrapper:has(.c-f-1-expand) .p-4 {
+  padding: 0 !important;
+  transition: 0.15s ease-in-out !important;
+}
+
+.c-f-1-minimize {
+  width: 20% !important;
+  bottom: 5% !important;
+  left: initial !important;
+  right: -8%;
+  border-radius: 10px !important;
+}
+.c-f-1-minimize:before {
+  border-radius: 10px !important;
+}
+.c-f-1-minimize.p-4 {
+  padding: 1rem 1rem !important;
+}
+.c-f-1-minimize .oidmekwhiruhwewerwr.px-5 {
+  padding-inline: 10px !important;
+}
+.c-f-1-minimize .oidmekwhiruhwewerwr h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem !important;
+}
+.c-f-1-minimize .oidmekwhiruhwewerwr p {
+  font-size: 0.9rem !important;
+}
+.c-f-1-minimize .oidmekwhiruhwewerwr p img {
+  width: 1.2rem !important;
+}
+.c-f-1-minimize .oidmekwhiruhwewerwr .doiejwrnjwerwer_form h5 {
+  font-size: 0.8rem !important;
+}
+.c-f-1-minimize .oidmekwhiruhwewerwr .doiejwrnjwerwer_form .doewhrwerwerr .col-lg-6 {
+  width: 100%;
+}
+.c-f-1-minimize .oidmekwhiruhwewerwr .doiejwrnjwerwer_form .doewhrwerwerr .col-lg-6.mb-4 {
+  margin-bottom: 0.6rem !important;
+}
+.c-f-1-minimize .oidmekwhiruhwewerwr .doiejwrnjwerwer_form .doewhrwerwerr label {
+  font-size: 0.9rem;
+}
+.c-f-1-minimize .oidmekwhiruhwewerwr form .idnekwhre_btn .btn125 {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0 !important;
+}
+
+.common-form-wrapper .cf-close-btn {
+  width: 2rem;
+  height: 2rem;
+  background: #777777;
+  right: 0;
+  top: -2.3rem;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.common-form-wrapper .cf-close-btn:hover {
+  opacity: 1;
+  transition: 0.2s ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.common-form-wrapper .cf-close-btn i {
+  color: #fff;
+  font-size: 1.4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.common-form-wrapper .c-f-1:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  left: 0;
+  top: 0;
+  background: linear-gradient(45deg, var(--main-blue-common-color), var(--main-orange-border-color));
+  opacity: 0.9;
+}
+
+.oidjweihriwer img.idhiwerer {
+  width: 2.5rem;
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%);
+  mix-blend-mode: multiply;
+}
+
+.oidjweihriwer img.idnekwhiwejoir {
+  mix-blend-mode: multiply;
+  width: 2rem;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.iomdiweuirwrwer {
+  height: 15vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.oidjweihriwer input {
+  padding: 1rem 4rem 1rem 3.2rem;
+  border-radius: 0.5rem 0.5rem;
+}
+
+.dojeoijrwerwer {
+  border-radius: 0.5rem;
+}
+
+.c-f-1-expand {
+  background: #fff !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.3s ease-in-out;
+}
+
+.c-f-1-expand:before {
+  background: #fff !important;
+}
+
+.c-f-1-expand .idnekwhiwejoir {
+  width: 2rem;
+}
+
+.fa-down-left-and-up-right-to-center {
+  color: #777777;
+  cursor: pointer;
+}
+
+.jinduiweorjoiwerwer {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.oidmekwhiruhwewerwr {
+  height: 65vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.oidmekwhiruhwewerwr h2 {
+  font-size: 1.6rem;
+}
+.oidmekwhiruhwewerwr h2 span {
+  color: var(--button-main-blue-color);
+}
+.oidmekwhiruhwewerwr .oisdhifknhwere {
+  color: #4e4e4e !important;
+}
+.oidmekwhiruhwewerwr .fgrtdfytherrerwrr {
+  color: #4e4e4e;
+}
+.oidmekwhiruhwewerwr .fgrtdfytherrerwrr span {
+  color: var(--button-main-blue-color);
+  font-weight: 600;
+}
+.oidmekwhiruhwewerwr .doiejwrnjwerwer_form h5 {
+  font-size: 1rem !important;
+}
+.oidmekwhiruhwewerwr .doiejwrnjwerwer_form form .indnjhuwerrwer_inner label {
+  font-family: var(--font-family-space-grotesk);
+  color: #4e4e4e;
+  font-weight: 500;
+}
+.oidmekwhiruhwewerwr .doiejwrnjwerwer_form form .indnjhuwerrwer_inner input::-moz-placeholder {
+  font-size: 0.9rem;
+}
+.oidmekwhiruhwewerwr .doiejwrnjwerwer_form form .indnjhuwerrwer_inner input::placeholder {
+  font-size: 0.9rem;
+}
+
+/*common form end*//*# sourceMappingURL=CommonForm.css.map */

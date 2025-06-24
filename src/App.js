@@ -5,6 +5,7 @@ import http from "./http";
 import './assets/css/style.css';
 import './assets/css/headerresponsive.css';
 import ScrollToTop from "./hooks/ScrollToTop";
+import { CommonForm } from "./pages/Services/FormComponent/CommonForm";
 
 function App() {
   const [CategoryDetails, setcategoryDetails] = useState({
@@ -28,7 +29,8 @@ function App() {
       <ScrollToTop />
       <Header CategoryDetails={CategoryDetails}/>  
       <div className="middle-wrapper">
-        <AllRoutes/></div>      
+        <AllRoutes CategoryDetails={CategoryDetails}/></div>      
+        <CommonForm />
       <Footer/>
     </div>
   );
