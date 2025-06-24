@@ -79,7 +79,9 @@ export const Blog = () => {
                                 </div>
 
                                 <div className={styles.dfbgdfhgdf}>
-                                  <h4>{allBlogs.blog_title}</h4>
+                                  <Link to={`/blog/${allBlogs.slug}`}>
+                                    <h4>{allBlogs.blog_title}</h4>
+                                  </Link>
                                   <p>{allBlogs.short_description}</p>
                                   <Link to={`/blog/${allBlogs.slug}`}>
                                     <button>Read More..</button>
@@ -216,11 +218,36 @@ export const Blog = () => {
                             activeTab === "tab-2" ? styles.current : ""
                           }`}
                         >
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non proident, sunt
-                          in culpa qui officia deserunt mollit anim id est
-                          laborum.
+                          {BlogDetails.latest_blog && BlogDetails.latest_blog.length > 0 ? (
+                            BlogDetails.latest_blog.map((latestBlog, index) => (
+                              <div className={styles.dfdfgdfg}>
+                                <div className="row">
+                                  <div className="col-lg-4">
+                                    <div className={styles.fghnfg}>
+
+                                      <img src={`${BlogDetails.image_url}/${latestBlog.blog_image}`} alt={latestBlog.blog_title} />
+                                    </div>
+                                  </div>
+                                  <div className="col-lg-8">
+                                    <div className={styles.dfgfgdfg}>
+                                      <Link to={`/blog/${latestBlog.slug}`}>
+                                        <h6>{latestBlog.blog_title}</h6>
+                                      </Link>
+                                      
+                                      <p>{new Date(latestBlog.blog_date).toLocaleDateString("en-US", {
+                                          year: "numeric",
+                                          month: "long",
+                                          day: "numeric"
+                                        })}
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              ))
+                          ) : (
+                            <p>No Blogs Available</p>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -230,77 +257,23 @@ export const Blog = () => {
                     <div className={styles.dfgndf}>
                       <h4>Explore Topics</h4>
                     </div>
-                    <div className={styles.dfgfgdf5654}>
-                      <div className={styles.dfgdfg}>
-                        <p>
-                          <i className="fa-solid fa-chevron-right"></i>{" "}
-                          <span>Digital Marketing</span>{" "}
-                        </p>
-                      </div>
-                      <div className={styles.fdgbdfg}>
-                        <h6>(10)</h6>
-                      </div>
-                    </div>
-
-                    <div className={styles.dfgfgdf5654}>
-                      <div className={styles.dfgdfg}>
-                        <p>
-                          <i className="fa-solid fa-chevron-right"></i>{" "}
-                          <span>Web Design</span>{" "}
-                        </p>
-                      </div>
-                      <div className={styles.fdgbdfg}>
-                        <h6>(10)</h6>
-                      </div>
-                    </div>
-
-                    <div className={styles.dfgfgdf5654}>
-                      <div className={styles.dfgdfg}>
-                        <p>
-                          <i className="fa-solid fa-chevron-right"></i>{" "}
-                          <span>Web Development</span>{" "}
-                        </p>
-                      </div>
-                      <div className={styles.fdgbdfg}>
-                        <h6>(10)</h6>
-                      </div>
-                    </div>
-
-                    <div className={styles.dfgfgdf5654}>
-                      <div className={styles.dfgdfg}>
-                        <p>
-                          <i className="fa-solid fa-chevron-right"></i>{" "}
-                          <span>Advance Excel</span>{" "}
-                        </p>
-                      </div>
-                      <div className={styles.fdgbdfg}>
-                        <h6>(10)</h6>
-                      </div>
-                    </div>
-
-                    <div className={styles.dfgfgdf5654}>
-                      <div className={styles.dfgdfg}>
-                        <p>
-                          <i className="fa-solid fa-chevron-right"></i>{" "}
-                          <span>Seo Marketing</span>{" "}
-                        </p>
-                      </div>
-                      <div className={styles.fdgbdfg}>
-                        <h6>(10)</h6>
-                      </div>
-                    </div>
-
-                    <div className={styles.dfgfgdf5654}>
-                      <div className={styles.dfgdfg}>
-                        <p>
-                          <i className="fa-solid fa-chevron-right"></i>{" "}
-                          <span>Digital Marketing</span>{" "}
-                        </p>
-                      </div>
-                      <div className={styles.fdgbdfg}>
-                        <h6>(10)</h6>
-                      </div>
-                    </div>
+                    {BlogDetails.blog_counts && BlogDetails.blog_counts.length > 0 ? (
+                        BlogDetails.blog_counts.map((serviceBlogCount, index) => (
+                          <div className={styles.dfgfgdf5654}>
+                            <div className={styles.dfgdfg}>
+                              <p>
+                                <i className="fa-solid fa-chevron-right"></i>{" "}
+                                <span>{serviceBlogCount.category_name}</span>{" "}
+                              </p>
+                            </div>
+                            <div className={styles.fdgbdfg}>
+                              <h6>({serviceBlogCount.blog_count})</h6>
+                            </div>
+                          </div>
+                        ))
+                    ) : (
+                      <p>No Blogs Available</p>
+                    )}
                   </div>
                 </div>
               </div>

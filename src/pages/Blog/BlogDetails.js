@@ -33,7 +33,28 @@ export const BlogDetails = () => {
     return <Loader />;
   }
 
-  console.log(BlogDetails);
+  const blogUrl = window.location.href;
+
+  const shareOnFacebook = () => {
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(blogUrl)}`;
+    window.open(facebookUrl, '_blank', 'width=600,height=400');
+  };
+
+  const shareOnTwitter = () => {
+    const text = encodeURIComponent(BlogDetails.data.blog_title);
+    const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(blogUrl)}&text=${text}`;
+    window.open(twitterUrl, '_blank', 'width=600,height=400');
+  };
+
+  const shareOnLinkedIn = () => {
+    const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(blogUrl)}`;
+    window.open(linkedInUrl, '_blank', 'width=600,height=400');
+  };
+
+  const shareOnWhatsApp = () => {
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(blogUrl)}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   return (
     <div>
@@ -106,11 +127,10 @@ export const BlogDetails = () => {
                     <h6>Share This on </h6>
                     <hr />
                     <div className={styles.dfgdfg}>
-                      <img src="/images/socialicon (1).png" alt="" />
-                      <img src="/images/socialicon (2).png" alt="" />
-                      <img src="/images/socialicon (3).png" alt="" />
-                      <img src="/images/socialicon (4).png" alt="" />
-                      <img src="/images/socialicon (5).png" alt="" />
+                      <img src="/images/socialicon (1).png" alt="Facebook" onClick={shareOnFacebook} style={{ cursor: "pointer" }} />
+                      <img src="/images/whatsapp_11378621.png" alt="Whatsapp" onClick={shareOnWhatsApp} style={{ cursor: "pointer" }} />
+                      <img src="/images/socialicon (3).png" alt="LinkedIn" onClick={shareOnLinkedIn} style={{ cursor: "pointer" }} />
+                      <img src="/images/socialicon (5).png" alt="Twitter" onClick={shareOnTwitter} style={{ cursor: "pointer" }} />
                     </div>
                   </div>
                 </div>
@@ -190,7 +210,10 @@ export const BlogDetails = () => {
                                 </div>
 
                                 <div className={styles.dfbgdfhgdf}>
-                                    <h4>{realatedBlogs.blog_title}</h4>
+                                    <Link to={`/blog/${realatedBlogs.slug}`}>
+                                        <h4>{realatedBlogs.blog_title}</h4>
+                                    </Link>
+                                    
                                     <p>{realatedBlogs.short_description}</p>
                                     <Link to={`/blog/${realatedBlogs.slug}`}>
                                         <button>Read More..</button>
@@ -323,11 +346,36 @@ export const BlogDetails = () => {
                             activeTab === "tab-2" ? styles.current : ""
                           }`}
                         >
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non proident, sunt
-                          in culpa qui officia deserunt mollit anim id est
-                          laborum.
+                          {BlogDetails.latest_blog && BlogDetails.latest_blog.length > 0 ? (
+                            BlogDetails.latest_blog.map((latestBlog, index) => (
+                              <div className={styles.dfdfgdfg}>
+                                <div className="row">
+                                  <div className="col-lg-4">
+                                    <div className={styles.fghnfg}>
+
+                                      <img src={`${BlogDetails.image_url}/${latestBlog.blog_image}`} alt={latestBlog.blog_title} />
+                                    </div>
+                                  </div>
+                                  <div className="col-lg-8">
+                                    <div className={styles.dfgfgdfg}>
+                                      <Link to={`/blog/${latestBlog.slug}`}>
+                                        <h6>{latestBlog.blog_title}</h6>
+                                      </Link>
+                                      
+                                      <p>{new Date(latestBlog.blog_date).toLocaleDateString("en-US", {
+                                          year: "numeric",
+                                          month: "long",
+                                          day: "numeric"
+                                        })}
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              ))
+                          ) : (
+                            <p>No Blogs Available</p>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -337,77 +385,23 @@ export const BlogDetails = () => {
                   <div className={styles.dfgndf}>
                     <h4>Explore Topics</h4>
                   </div>
-                  <div className={styles.dfgfgdf5654}>
-                    <div className={styles.dfgdfg}>
-                      <p>
-                        <i className="fa-solid fa-chevron-right"></i>{" "}
-                        <span>Digital Marketing</span>{" "}
-                      </p>
-                    </div>
-                    <div className={styles.fdgbdfg}>
-                      <h6>(10)</h6>
-                    </div>
-                  </div>
-
-                  <div className={styles.dfgfgdf5654}>
-                    <div className={styles.dfgdfg}>
-                      <p>
-                        <i className="fa-solid fa-chevron-right"></i>{" "}
-                        <span>Web Design</span>{" "}
-                      </p>
-                    </div>
-                    <div className={styles.fdgbdfg}>
-                      <h6>(10)</h6>
-                    </div>
-                  </div>
-
-                  <div className={styles.dfgfgdf5654}>
-                    <div className={styles.dfgdfg}>
-                      <p>
-                        <i className="fa-solid fa-chevron-right"></i>{" "}
-                        <span>Web Development</span>{" "}
-                      </p>
-                    </div>
-                    <div className={styles.fdgbdfg}>
-                      <h6>(10)</h6>
-                    </div>
-                  </div>
-
-                  <div className={styles.dfgfgdf5654}>
-                    <div className={styles.dfgdfg}>
-                      <p>
-                        <i className="fa-solid fa-chevron-right"></i>{" "}
-                        <span>Advance Excel</span>{" "}
-                      </p>
-                    </div>
-                    <div className={styles.fdgbdfg}>
-                      <h6>(10)</h6>
-                    </div>
-                  </div>
-
-                  <div className={styles.dfgfgdf5654}>
-                    <div className={styles.dfgdfg}>
-                      <p>
-                        <i className="fa-solid fa-chevron-right"></i>{" "}
-                        <span>Seo Marketing</span>{" "}
-                      </p>
-                    </div>
-                    <div className={styles.fdgbdfg}>
-                      <h6>(10)</h6>
-                    </div>
-                  </div>
-
-                  <div className={styles.dfgfgdf5654}>
-                    <div className={styles.dfgdfg}>
-                      <p>
-                        <i className="fa-solid fa-chevron-right"></i>{" "}
-                        <span>Digital Marketing</span>{" "}
-                      </p>
-                    </div>
-                    <div className={styles.fdgbdfg}>
-                      <h6>(10)</h6>
-                    </div>
-                  </div>
+                  {BlogDetails.blog_counts && BlogDetails.blog_counts.length > 0 ? (
+                      BlogDetails.blog_counts.map((serviceBlogCount, index) => (
+                        <div className={styles.dfgfgdf5654}>
+                          <div className={styles.dfgdfg}>
+                            <p>
+                              <i className="fa-solid fa-chevron-right"></i>{" "}
+                              <span>{serviceBlogCount.category_name}</span>{" "}
+                            </p>
+                          </div>
+                          <div className={styles.fdgbdfg}>
+                            <h6>({serviceBlogCount.blog_count})</h6>
+                          </div>
+                        </div>
+                      ))
+                    ) : (
+                      <p>No Blogs Available</p>
+                    )}
                 </div>
               </div>
             </div>
