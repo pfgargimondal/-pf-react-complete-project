@@ -77,6 +77,7 @@ export const Template50 = ({ serviceResponse, slug }) => {
 
                         <div className={styles.dfgjhdfgdfg}>
                             <div className="row">
+
                                 {["one", "two", "three"].map((suffix, i) => (
                                     <div className="col-lg-4" key={i}>
                                         <div className={styles[`dffghdf${suffix === "one" ? "" : suffix}`]}>

@@ -31,13 +31,27 @@ const ServiceEnquiryForm = ({ loading, slug}) => {
           });
     
           if (response.data.success) {
-            toast(response.data.message, {
+              toast(response.data.message, {
+                style: {
+                  background: "#2ecc71",
+                  color: "#fff",
+                },
+              });
+      
+              setInputs({
+                name: "",
+                phone_number: "",
+                email: "",
+                website_url: "",
+                message: "",
+              });
+          }else{
+            toast.error(response.data.message, {
               style: {
-                background: "#2ecc71",
+                background: "#e74c3c", // red for error
                 color: "#fff",
               },
             });
-    
             setInputs({
               name: "",
               phone_number: "",

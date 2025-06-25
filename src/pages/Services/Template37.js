@@ -79,7 +79,7 @@ export const Template37 = ({ serviceResponse, slug }) => {
                           serviceResponse.data.third_section_description,
                       }}
                     />
-                    <button className="btn125">Get started</button>
+                    <button className="btn125">Get started</button> 
                   </div>
                 </div>
                 <div className="col-lg-5">

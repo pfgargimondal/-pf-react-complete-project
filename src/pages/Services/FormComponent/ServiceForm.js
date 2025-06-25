@@ -4,7 +4,7 @@ import { validateInputs } from "../../../utils/validation";
 import http from "../../../http";
 
 const ServiceForm = ({ loading, slug}) => {
-      const [inputs, setInputs] = useState({
+    const [inputs, setInputs] = useState({
       name: "",
       phone_number: "",
       email: "",
@@ -46,6 +46,20 @@ const ServiceForm = ({ loading, slug}) => {
             website_url: "",
             message: "",
           });
+        }else{
+          toast.error(response.data.message, {
+              style: {
+                background: "#e74c3c", // red for error
+                color: "#fff",
+              },
+            });
+            setInputs({
+              name: "",
+              phone_number: "",
+              email: "",
+              website_url: "",
+              message: "",
+            });
         }
       } catch (error) {
         if (error.response?.data?.message) {
@@ -159,6 +173,7 @@ const ServiceForm = ({ loading, slug}) => {
                             placeholder="Phone"
                             name="phone_number"
                             class="form-control"
+                            maxLength={10}
                             value={inputs.phone_number}
                             onChange={(e) =>
                               setInputs({

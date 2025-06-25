@@ -47,7 +47,7 @@
   margin-top: 45px;
 }
 
-.dffghdf1 {
+.dffghdfone {
   width: 100%;
   padding: 20px;
   border-radius: 6px;
@@ -63,12 +63,20 @@
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-.dffghdf2 {
+.dffghdftwo {
   width: 100%;
   padding: 20px;
   border-radius: 6px;
   background: linear-gradient(90deg, rgb(232, 185, 162) 0%, rgb(255, 255, 255) 50%, rgb(205, 209, 247) 100%);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.dffghdfthree{
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgb(232, 185, 162) 0%, rgb(255, 255, 255) 50%, rgb(205, 209, 247) 100%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .jhfg525 {
@@ -207,8 +215,9 @@
     .fhgdfgdf,
     .dfbngdfjhgd,
     .dffghdf,
-    .dffghdf1,
-    .dffghdf2{
+    .dffghdfone,
+    .dffghdfthree,
+    .dffghdftwo{
         text-align: center;
     }
     
@@ -258,7 +267,7 @@
     .dfbdfhgdfg,
     .dfbngdfjhgd,
     .dffghdf,
-    .dffghdf1{
+    .dffghdfone{
         margin-bottom: 2rem;
     }
     

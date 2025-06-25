@@ -10,6 +10,7 @@ import http from "../../http";
 import Loader from "../../component/Loader/Loader";
 import { Testimonial } from "./components/Testimonial";
 import { EnquiryForm } from "./components/EnquiryForm";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Home = ({state}) => {
 
@@ -219,14 +220,9 @@ export const Home = ({state}) => {
                     </div>
                   </div>
                 </div>
-                <div
-                  className="iundkerer position-relative overflow-hidden"
-                  data-aos="zoom-in"
-                  data-aos-duration={1500}
-                >
-                  <EnquiryForm loading={setLoading} serviceCategory={state}/>
-                  <div className="border-blur" />
-                </div>
+
+                <EnquiryForm loading={setLoading} serviceCategory={state}/>
+
                 <div className="duhweurw uinkhwerwer position-absolute bg-white p-2">
                   <div className="uidhewrewrer p-2">
                     <span className="d-flex">
@@ -1016,6 +1012,7 @@ export const Home = ({state}) => {
       {/* </main> */}
       {/*middle end*/}
       <div className="over-white-layer position-fixed bg-white" />
+      
     </div>
   );
 };

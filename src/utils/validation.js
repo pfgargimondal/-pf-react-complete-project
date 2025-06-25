@@ -23,7 +23,7 @@ export const validateInputs = (inputs) => {
   if (!inputs.website_url.trim()) {
     newErrors.website_url = "Website URL is required";
   } else if (
-    !/^(https?:\/\/)?([\w-]+\.)+[\w-]{2,}(\/[^\s]*)?$/.test(inputs.website_url.trim())
+    !/^(https?:\/\/)?((localhost:\d{1,5})|([\w-]+\.)+[\w-]{2,})(\/[^\s]*)?$/.test(inputs.website_url.trim())
   ) {
     newErrors.website_url = "Please enter a valid website URL (e.g. https://example.com)";
   }
