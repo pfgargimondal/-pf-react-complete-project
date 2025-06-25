@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom/dist";
-import { Home, Contactus, Aboutus, Careers, OurPortfolio, BusinessRegister, Services, Blog, BlogDetails, WebDevelopment, WebDesign, PageNotFound } from "../pages/index";
+import { Home, Contactus, Aboutus, Careers, OurPortfolio, BusinessRegister, Services, Blog, BlogDetails, PageNotFound } from "../pages/index";
 import {DynamicPageRouter} from './DynamicPageRouter';
 
 export const AllRoutes = ({CategoryDetails}) => {
@@ -13,10 +13,6 @@ export const AllRoutes = ({CategoryDetails}) => {
         <Route path="/our-portfolio" element={<OurPortfolio />} />
         <Route path="/business-register" element={<BusinessRegister />} />
         <Route path="/services" element={<Services />} />
-
-        <Route path="/professional-website-development-service" element={<WebDevelopment />} />
-        <Route path="/web-design-services" element={<WebDesign />} />
-
 
         <Route path="/:slug"  element={<DynamicPageRouter/>} />
         <Route path="/blogs" element={<Blog />} />

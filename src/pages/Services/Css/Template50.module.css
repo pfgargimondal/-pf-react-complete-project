@@ -47,7 +47,7 @@
   margin-top: 45px;
 }
 
-.dffghdfone {
+.dffghdf1 {
   width: 100%;
   padding: 20px;
   border-radius: 6px;
@@ -63,20 +63,12 @@
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-.dffghdftwo {
+.dffghdf2 {
   width: 100%;
   padding: 20px;
   border-radius: 6px;
   background: linear-gradient(90deg, rgb(232, 185, 162) 0%, rgb(255, 255, 255) 50%, rgb(205, 209, 247) 100%);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-
-.dffghdfthree{
-    width: 100%;
-    padding: 20px;
-    border-radius: 6px;
-    background: linear-gradient(90deg, rgb(232, 185, 162) 0%, rgb(255, 255, 255) 50%, rgb(205, 209, 247) 100%);
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .jhfg525 {
@@ -215,22 +207,21 @@
     .fhgdfgdf,
     .dfbngdfjhgd,
     .dffghdf,
-    .dffghdfone,
-    .dffghdfthree,
-    .dffghdftwo{
+    .dffghdf1,
+    .dffghdf2{
         text-align: center;
     }
     
-    .zsdcvdfgfryhfre .tab-container.d-flex{
+    .zsdcvdfgfryhfre .tab-container:global(.d-flex){
         display: block !important;
     }
     
-    .idnwehrwer_overlay.p-5,
-    .djnhweber_inner_overlay.p-5{
+    .idnwehrwer_overlay:global(.p-5),
+    .djnhweber_inner_overlay:global(.p-5){
         padding: 2rem !important;
     }
     
-    .zsdcvdfgfryhfre .tab-menu.me-4{
+    .zsdcvdfgfryhfre .tab-menu:global(.me-4){
         margin-right: 0 !important;
         margin-bottom: 2rem;
         text-align: center;
@@ -267,7 +258,7 @@
     .dfbdfhgdfg,
     .dfbngdfjhgd,
     .dffghdf,
-    .dffghdfone{
+    .dffghdf1{
         margin-bottom: 2rem;
     }
     
@@ -289,7 +280,7 @@
         margin-bottom: 2rem;
     }
     
-    .dughyee .col-lg-6:last-child{
+    .dughyee :global(.col-lg-6):last-child{
         margin-top: 2rem;
     }
     
@@ -299,7 +290,7 @@
         transform: translateX(-50%);
     }
     
-    .doieflmeoiwjrowe > .px-5{
+    .doieflmeoiwjrowe > :global(.px-5){
         padding-left: 0.2rem !important;
         padding-right: 0.2rem !important;
     }
@@ -321,26 +312,26 @@
         padding: 5rem 0;
     }
     
-    .sdfsdfsdf > div.d-flex{
+    .sdfsdfsdf > :global(div.d-flex){
         display: block !important;
         text-align: center;
     }
     
-    .sdfsdfsdf > div.d-flex button{
+    .sdfsdfsdf > :global(div.d-flex button){
         margin-top: 2rem;
     }
     
-    .diksijfejor_wrapper.p-5{
+    .diksijfejor_wrapper:global(.p-5){
         padding: 0 !important;
     }
     
-    .fjhjdfdfgdf > .px-5,
-    .sdfsdcdrerrrr > .px-5,
-    .fjhfdfgdfg > .px-5,
-    .duiewmjroiweorrr > .px-5,
-    .zsdcvdfgfryhfre > .px-5,
-    .asdfdergdg > .p-5,
-    .iudniuwehirwerr > .px-5,
+    .fjhjdfdfgdf > :global(.px-5),
+    .sdfsdcdrerrrr > :global(.px-5),
+    .fjhfdfgdfg > :global(.px-5),
+    .duiewmjroiweorrr > :global(.px-5),
+    .zsdcvdfgfryhfre > :global(.px-5),
+    .asdfdergdg > :global(.p-5,)
+    .iudniuwehirwerr > :global(.px-5),
     .fghsdfgsdfgdfg{
         padding-left: 1rem !important;
         padding-right: 1rem !important;
@@ -372,7 +363,7 @@
         justify-content: center;
     }
     
-    .dfbjhfdfgdf > .p-5{
+    .dfbjhfdfgdf > :global(.p-5){
         padding: 0.2rem !important;
     }
     
@@ -393,8 +384,8 @@
         text-align: center;
     }
     
-    .weinjiurr_inner.p-5,
-    .ijdnm_eoijrer.p-5{
+    .weinjiurr_inner:global(.p-5),
+    .ijdnm_eoijrer:global(.p-5){
         padding: 1rem !important;
     }
 }

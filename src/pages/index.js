@@ -6,10 +6,6 @@ export { OurPortfolio } from "./OurPortfolio/OurPortfolio";
 export { BusinessRegister } from "./BusinessRegister/BusinessRegister";
 export { Services } from "./Services/Services";
 
-export { WebDevelopment } from "./Services/WebDevelopment";
-export { WebDesign } from "./Services/WebDesign";
-
-
 export { Blog } from "./Blog/Blog";
 export { BlogDetails } from "./Blog/BlogDetails";
 
